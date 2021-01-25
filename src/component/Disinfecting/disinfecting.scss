@@ -1,0 +1,107 @@
+.disinfecting{
+  .introducing{
+    padding-top: 30px;
+    // border: 1px solid;
+    height: 90px;
+    margin-left: 150px;
+    font-size: 36px;
+  }
+  .red-title{
+    // border: 1px solid;
+    margin-left: 150px;
+    font-size: 26px;
+    font-family: OpenSans;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d21044;
+  }
+  .red-title_v2{
+    // border: 1px solid;
+    padding-top: 80px;
+    margin-left: 150px;
+    font-size: 26px;
+    font-family: OpenSans;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d21044;
+  }
+  .text{
+    // border: 1px solid;
+    padding-top: 20px;
+    margin-left: 150px;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+
+  .highlightText{
+    padding-top: 60px;
+    margin-left: 150px;
+    font-size: 30px;
+    font-family: OpenSans;
+    font-size: 41px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  .highlightText_v2{
+    padding-top: 50px;
+    
+    margin-left: 194px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: SegoeUI;
+    font-size: 41px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  .rectangle-cont{
+    margin-top: 80px;
+    // border: 1px solid;
+    width: 100%;
+    // height: 1000px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .textList{
+    // border: 1px solid;
+    height: 270px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-left: 240px;
+  }
+}
+  
