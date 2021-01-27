@@ -9,7 +9,10 @@ export default class Footer extends React.Component {
         <footer className="Rectangle-33">
           <div className='footer-contents'>
             <div className='left-footer'>
-              <div className='footer-logo'> pic </div>
+              <div className='footer-logo'> 
+              {/* pic  */}
+              <img src="/img/ASSETS/APEXLOGO.png" width='100%'/>
+              </div>
             </div> 
             <div className='right-footer'>
               <div className="email">

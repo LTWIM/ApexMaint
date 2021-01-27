@@ -1,4 +1,4 @@
-.main-logo-top{
+.main-logo-top {
   // border: 1px solid;
   width: 100%;
   height: 139px;
@@ -7,24 +7,22 @@
   max-width: 1440px;
   margin: auto;
 }
-.main-logo{
+.main-logo {
   align-self: center;
-  margin: auto;  
-  border: 1px solid;
+  margin: auto;
+  // border: 1px solid;
   height: 45px;
   width: 352px;
-  text-align: center; 
-  
+  text-align: center;
 }
-.category-cont{
+.category-cont {
   // border: 1px solid;
   width: 100%;
   height: 54px;
   background-color: #004890;
   display: flex;
 
-  
-  .inner{
+  .inner {
     width: 100%;
     min-width: 1440px;
     display: flex;
@@ -32,7 +30,7 @@
     padding-top: 14px;
   }
 }
-.subcategory{
+.subcategory {
   // border: 1px solid;
   // font-family: YuGothic;
   font-size: 20px;
