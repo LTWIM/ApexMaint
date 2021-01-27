@@ -5,12 +5,12 @@ const app = express();
 const exphbs = require("express-handlebars");
 const db = require("./config/keys").mongoURI;
 // Imports created routes.
-
+const Admins = require("./routes/admins")
 // Allows us to parse the json sent to the front end.
 const bodyParser = require("body-parser");
 // Verifies incoming request tokens to project routes.
-const passport = require("passport");
-require("./config/passport")(passport);
+// const passport = require("passport");
+// require("./config/passport")(passport);
 const path = require("path");
 
 //View engine set up
@@ -39,10 +39,10 @@ mongoose
 const port = process.env.PORT || 5000;
 
 // Sets up a basic route so that we can render some information on our page.
-app.get("/", (req, res) => res.send("Coco Puffs"));
+app.get("/", (req, res) => res.send("Checking Test"));
 
 // Sets passport as the bouncer.
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 // Parse application/x-www-form-urlencoded.
 app.use(
@@ -58,12 +58,7 @@ app.use(
 );
 
 // We must tell Express to use imported routes.
-app.use("/api/users", users);
-app.use("/api/tests", tests);
-app.use("/api/images", images);
-app.use("/api/emailer", emailer);
-app.use("/api/events", events);
-app.use("/api/query", query)
+app.use("/api/admins", Admins)
 // Tells Express to start a socket and listen for connections on the path.
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
