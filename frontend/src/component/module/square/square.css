@@ -19,7 +19,7 @@
 }
 
 .service {
-  font-family: OpenSans;
+  /* font-family: OpenSans; */
   font-size: 41px;
   font-weight: 600;
   font-stretch: normal;
@@ -32,7 +32,7 @@
 
 #title {
   height: 27px;
-  font-family: OpenSans;
+  /* font-family: OpenSans; */
   font-size: 20px;
   font-weight: 600;
   font-stretch: normal;

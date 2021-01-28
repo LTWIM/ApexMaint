@@ -26,7 +26,7 @@
 
 #circleTitle {
   opacity: 1;
-  font-family: OpenSans;
+  /* font-family: OpenSans; */
   font-size: 25px;
   font-weight: 600;
   font-stretch: normal;

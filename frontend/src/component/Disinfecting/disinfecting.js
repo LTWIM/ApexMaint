@@ -10,10 +10,15 @@ export class disinfecting extends React.Component{
     const Common = ["Door handles", "Door handles", "Entryway doors", "Elevator buttons","Cabinet handles"]
     const Lunchrooms = ["Tables","Chair arms", "Sinks", "Water dispenser", "Light switches"];
     const Restrooms =["Toilets", "Faucets", "sinks", "Doorknobs", "Light switches", "Keyboard"];
-
+    
     return(
       <div className='disinfecting'>
-         <LongBanner wordsOne={"Disinfecting * Sanitizing Service"} wordsTwo={"Commercial Cleaning Services"} page={".cleaning_service_container"}/>
+        <div className='wall-paper-top'>
+          <div className='title'>Disinfecting • Sanitizing Services</div>
+          <div className='sub-title'>WE KEEP YOUR WORK PLACE HEALTHY</div>
+        </div>
+
+
         <div className='introducing'>
           Introducing Disinfecting • Sanitizing Services from APEX Building Maintenance
         </div>
@@ -42,8 +47,15 @@ export class disinfecting extends React.Component{
           <div>We use an electric ULC sprayer to provide a touchless application that reduces the rick cross contamination.</div>
           <div>We operate with EPA approved disinfectants to kill viruses that reside on surface.</div>
         </div>
+        <div className='wall-paper-bottom'>
+          <div className='darkbox'>
+            <LongBanner type='type4'/>
+            <div className='touchwithus'>
+              
+            </div>
+          </div>
+        </div>  
         
-      <LongBanner wordsOne={"Janitorial Services"} wordsTwo={"Commercial Cleaning Services"} page={"cleaning"}/>
       </div>
     )
   }
