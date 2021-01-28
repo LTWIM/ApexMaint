@@ -10,7 +10,7 @@ export class header extends React.Component{
         <div className='main-logo-top'>
           <div className='main-logo'>
             {/* Logo Pic */}
-            <img src="/img/ASSETS/APEXLOGO.png" width='100%'/>
+            <img src="/logo/apexOld.png" width='100%'/>
           </div>
         </div>
         <div className='category-cont'>

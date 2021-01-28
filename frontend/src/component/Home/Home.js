@@ -26,7 +26,7 @@ export class Home extends React.Component{
             <div className='our-services-pic' object-fit="cover">
               <img className="image" src={"/img/ourservices1.png"}/>
               <div className='darker'/>
-              <div className='title'>JANITORIAL SERVICES</div>
+              <div className='title'><span className="animated fadeIn">JANITORIAL SERVICES</span></div>
             </div>
             <div className='our-services-pic'>
               <img className="image" src={"/img/ourservices2.png"}/>
@@ -108,7 +108,7 @@ export class Home extends React.Component{
 
         <div className='wall-paper-bottom'>
           <div className='darker'></div>
-          <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICIES</div>
+          <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICES</div>
           <Link to='/contact'><div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div></Link>     
         </div>
 
