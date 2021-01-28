@@ -8,7 +8,7 @@
 /frontend/node_modules
 
 # Ignore sensitive keys.
-/config/keys_dev.js
+./config/keys_dev.js
 node_modules
 node_modules
 node_modules
