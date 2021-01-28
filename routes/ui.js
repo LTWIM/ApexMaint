@@ -40,4 +40,41 @@ router.get("/get_commercial", async (req, res) => {
   }
 })
 
+router.post("/post_ui", async (req, res) => {
+  const {pageName, sectionName, content, imageUrls} = req.body
+  try {
+    
+    let newUi = await new UI({
+      pageName,
+      sectionName,
+      content,
+      imageUrls
+    })
+    
+  } catch (err) {
+    console.log(err)
+    res.status(500).send(err)
+  }
+})
+
+router.patch("/edit_ui", async (req, res) => {
+  const {
+    pageName,
+    sectionName,
+    content,
+    imageUrls
+  } = req.body
+
+  try {
+
+    let selectedUi = await UI.findOne({ pageName })
+    
+     
+  } catch (err) {
+    console.log(err)
+    res.status(500).send(err)
+  }
+  
+})
+
 module.exports = router;
