@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import LongBanner from "../module/long_banner/Longbanner.jsx";
+import "./style.scss"
 
 export class Commercial extends React.Component{
   render(){
