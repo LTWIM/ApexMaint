@@ -4,6 +4,8 @@
 /.bundle
 config/keys_dev.js
 config/keys_dev
+/config/keys_dev
+/config/keys_dev.js
 # Ignore npm packages.
 /node_modules
 /frontend/node_modules
