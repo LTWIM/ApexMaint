@@ -3,7 +3,7 @@
 # Ignore bundler config.
 /.bundle
 config/keys_dev.js
-config/keys_
+config/keys_dev
 # Ignore npm packages.
 /node_modules
 /frontend/node_modules
