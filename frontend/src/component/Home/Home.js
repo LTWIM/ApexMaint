@@ -67,26 +67,25 @@ export class Home extends React.Component{
   Circle = () => {
     return(
       <div className='Areas-we-services-pic-cont'>
-        <div className='Areas-we-services-pic1'>pic
+        <div className='Areas-we-services-pic1'>
           <div className='logo-title'>
             <div>Los Angeles</div>
             <div>Country</div>
           </div>
         </div>
-        <div className='Areas-we-services-pic2'>pic
+        <div className='Areas-we-services-pic2'>
           <div className='logo-title'>
             <div>Orange </div>
             <div>Country</div>
           </div>
         </div>
-        <div className='Areas-we-services-pic3'>pic
+        <div className='Areas-we-services-pic3'>
           <div className='logo-title'>
             <div>Riverside</div>
             <div>Country</div>
           </div>
         </div>
         <div className='Areas-we-services-pic4'>
-          pic
           <div className='logo-title'>
             <div>San Bernardino</div>
             <div>Country</div>
