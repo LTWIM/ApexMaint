@@ -106,7 +106,7 @@ export class Home extends React.Component{
           <LongBanner type="type5"/>
         </div>
 
-        <div className='wall-paper-bottom'>
+        <div className='wall-paper-bottom-dash'>
           <div className='darker'></div>
           <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICES</div>
           <Link to='/contact'><div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div></Link>     
