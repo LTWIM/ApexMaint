@@ -12,7 +12,7 @@ const UiSchema = new Schema({
   type:String,
   required:true
  },
- imageUrls:{
+imageUrls:{
   type: String,
   required: true
   },

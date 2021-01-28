@@ -50,16 +50,18 @@
     align-items: center;
     width: 40%;
     height: 100%;
-    border: 1px dotted black;
+    // border: 1px dotted black;
     text-align: center;
     .big-sp {
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
+      color: white;
     }
     .small-sp {
       font-size: 18px;
       text-transform: capitalize;
+      color:white;
     }
     a {
       text-emphasis: none;

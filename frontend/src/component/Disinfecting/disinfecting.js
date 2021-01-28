@@ -49,7 +49,7 @@ export class disinfecting extends React.Component{
         </div>
         <div className='wall-paper-bottom'>
           <div className='darkbox'>
-            <LongBanner type='type4'/>
+            <LongBanner type='type4' displayButton/>
             <div className='touchwithus'>
               
             </div>
