@@ -1,7 +1,7 @@
 import './App.css';
 import React,{ Component} from 'react';
-import {Header, Home, Footer, Disinfecting, Commercial, Supplies} from './component/index';
-import { BrowserRouter, Route } from 'react-router-dom';
+import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact} from './component/index';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Tester from "./component/testing/create_user_test"
 export class App extends React.Component{
   constructor(props){
@@ -10,17 +10,21 @@ export class App extends React.Component{
   render(){
     return(
       <div>
-        <Header/>
-        <div className='web-container'>    
-          <BrowserRouter>
-            <Route path="/" component={Home} exact/>
-            <Route path="/disinfecting" component={Disinfecting} exact/>
-            <Route path="/commercial" component={Commercial} exact/>
-            <Route path="/supplies" component={Supplies} exact/>  
-            <Route path="/testing" component={Tester} />    
-          </BrowserRouter>
-        </div>
-        <Footer/>
+        <BrowserRouter>
+
+          <Header/>
+            <div className='web-container'> 
+              <Switch>    
+                <Route path="/" component={Home} exact/>
+                <Route path="/disinfecting" component={Disinfecting} exact/>
+                <Route path="/commercial" component={Commercial} exact/>
+                <Route path="/supplies" component={Supplies} exact/>  
+                <Route path="/testing" component={Tester} /> 
+                <Route path="/contact" component={Contact} exact />
+              </Switch>  
+          </div>
+          <Footer/>
+        </BrowserRouter>
         
       </div>
       

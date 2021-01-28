@@ -2,7 +2,7 @@ import "./module.scss";
 import {Link} from "react-router-dom";
 import React from 'react';
 const LongBanner = (props) => {
-  const {type, backgroundImageUrl, content, bigContent, smallContent } =props
+  const {type, backgroundImageUrl, content, bigContent, smallContent, displayButton } =props
   /* This banner will be used in 3 instances where
   type1 would indidcate a hero with stacked text
   type2 would indicated left justified banner
@@ -62,7 +62,7 @@ const LongBanner = (props) => {
             <br/>
             <span className="small-sp">We would love to hear from you!</span>
             <br/>
-            <Link className="long-ban-link">Get In Touch With Us</Link>
+                {displayButton && <Link className="long-ban-link">Get In Touch With Us</Link>}
             </div>
             )
           case "type5":

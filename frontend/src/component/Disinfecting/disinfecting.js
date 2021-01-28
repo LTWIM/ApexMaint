@@ -5,6 +5,7 @@ import Squre from '../module/square/Square'
 import Rectangle from '../module/rectangle/rectangle'
 import './disinfecting.scss'
 export class disinfecting extends React.Component{
+  
   render(){
     const Offices =["Desk surfaces", "Chair arms", "Doorknobs", "Light Switches", "Phones", "Keyboard", "Mouse devices", "Office machinery" ]
     const Common = ["Door handles", "Door handles", "Entryway doors", "Elevator buttons","Cabinet handles"]
@@ -30,10 +31,10 @@ export class disinfecting extends React.Component{
         <div className='highlightText'>HIGH TRAFFIC TOUCH AREAS FOR DISINFECTING SERVICES</div>
         <div className="rectangle-cont">
 
-            <Rectangle page={"test"} wordsOne={"| Offices |"} wordsArray ={Offices}/>
-            <Rectangle page={"test"} wordsOne={"| Common  Areas |"} wordsArray ={Common}/>
-            <Rectangle page={"test"} wordsOne={"| Lunchrooms |"} wordsArray ={Lunchrooms}/>
-            <Rectangle page={"test"} wordsOne={"| Restrooms |"} wordsArray ={Restrooms}/>
+            <Rectangle page={"test"} wordsOne={"| Offices |"} wordsArray ={Offices} textColor="white" backgroundImageUrl='/img/office.png'/>
+            <Rectangle page={"test"} wordsOne={"| Common  Areas |"} wordsArray ={Common} backgroundImageUrl=''/>
+            <Rectangle page={"test"} wordsOne={"| Lunchrooms |"} wordsArray ={Lunchrooms} backgroundImageUrl/>
+            <Rectangle page={"test"} wordsOne={"| Restrooms |"} wordsArray ={Restrooms} backgroundImageUrl/>
 
         </div>
         <div className='red-title_v2'>COVID -19 DISINFECTING SERVICE</div>
@@ -49,13 +50,9 @@ export class disinfecting extends React.Component{
         </div>
         <div className='wall-paper-bottom'>
           <div className='darkbox'>
-            <LongBanner type='type4'/>
-            <div className='touchwithus'>
-              
-            </div>
+            <LongBanner type='type4' displayButton/>   
           </div>
-        </div>  
-        
+        </div> 
       </div>
     )
   }
