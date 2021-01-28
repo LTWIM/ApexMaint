@@ -52,7 +52,7 @@ const LongBanner = (props) => {
           <br/>
           <span className="small-sp">Contact us now if you would like to receive a personalized service</span>
           <br/>
-          <Link>ASK NOW</Link>
+          <Link to ={{pathname: "/contact"}}>ASK NOW</Link>
          </div>
          )
           case "type4":
@@ -102,7 +102,7 @@ const LongBanner = (props) => {
     }
   }
   return (
-    <div className={`${returnClassName(type)} long-ban-mod-cont`} style={{backgroundImage: `url(${backgroundImageUrl})`}} >
+    <div className={`${returnClassName(type)} long-ban-mod-cont`}>
       {renderContent(type)}
     </div>
   )
