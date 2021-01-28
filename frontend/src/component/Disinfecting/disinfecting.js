@@ -32,9 +32,9 @@ export class disinfecting extends React.Component{
         <div className="rectangle-cont">
 
             <Rectangle page={"test"} wordsOne={"| Offices |"} wordsArray ={Offices} textColor="white" backgroundImageUrl='/img/office.png'/>
-            <Rectangle page={"test"} wordsOne={"| Common  Areas |"} wordsArray ={Common} backgroundImageUrl=''/>
-            <Rectangle page={"test"} wordsOne={"| Lunchrooms |"} wordsArray ={Lunchrooms} backgroundImageUrl/>
-            <Rectangle page={"test"} wordsOne={"| Restrooms |"} wordsArray ={Restrooms} backgroundImageUrl/>
+            <Rectangle page={"test"} wordsOne={"| Common  Areas |"} wordsArray ={Common} textColor="white" backgroundImageUrl='/img/commonarea.png'/>
+            <Rectangle page={"test"} wordsOne={"| Lunchrooms |"} wordsArray ={Lunchrooms} textColor="white" backgroundImageUrl='/img/lunchroom.png'/>
+            <Rectangle page={"test"} wordsOne={"| Restrooms |"} wordsArray ={Restrooms} textColor="white" backgroundImageUrl='/img/restroom.png'/>
 
         </div>
         <div className='red-title_v2'>COVID -19 DISINFECTING SERVICE</div>
