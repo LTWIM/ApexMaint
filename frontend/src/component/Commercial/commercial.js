@@ -8,7 +8,7 @@ export class Commercial extends React.Component{
         return(
             <div>
             <div>
-                <LongBanner type="type1" content={<span className='hero-banner-cntt'>janitorial services<br/>commercial cleaning services</span>}/>
+                <LongBanner type="type1" content={<span className='big-sp'>janitorial services<br/><span className="small-sp">commercial cleaning services</span></span>}/>
               
             </div>
             <div>

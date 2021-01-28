@@ -38,13 +38,12 @@
     height: 305px;
     // background: black;
     // display: block;
-    background-image: url("/img/bottomLogo.svg");
+    // background-image: url("/img/bottomLogo.svg");
     background-position: 50% 60%;
     z-index: 1;
     
     .darkbox{
       margin: auto;
-      position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
       width: 1340px;
       height: 240px;
