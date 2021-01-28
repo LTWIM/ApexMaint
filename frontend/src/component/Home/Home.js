@@ -1,21 +1,39 @@
 import React,{ Component } from'react'
 import './home.scss'
 import LongBanner from "../module/long_banner/Longbanner"
+
 export class Home extends React.Component{
   render(){
     return(
       <div>
-        <LongBanner type="type5"/>
+        <div className='wall-paper-top-cont'>
+          <div className='wall-paper-top'>
+            <div className='wall-paper-dark'/>
+          </div>
+          <LongBanner type="type5"/>
+        </div>
 
         <div className='wall-paper-bottom'>
+          <div className='darker'></div>
           {/* <img  src='../img/wallpaperTop.jpg'></img> */}
           <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICIES</div>
-          <div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div>
+          <div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div>        
         </div>
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>
-            <div className='introduce-pic-logo'> Pic</div>
+            <div className='introduce-pic-logo'>
+              <div className='a'> <div className='red'>A</div>ffordable </div>
+              <div className='p'> <div className='blue'>P</div>rofessional </div>
+              <div className='e'> <div className='red'>E</div>xprienced </div>
+              <div className='redX'>X</div>
+              <div className='x'>cellently Referred</div>
+              <img className='triup' src={'/img/tri-up.png'}></img>
+              <img className='tridown' src={'/img/tri-down.png'}></img>
+              <img className='trileft' src={'/img/tri-up.png'}></img>
+              <img className='triright' src={'/img/tri-up.png'}></img>
+
+            </div>
           </div>
           <div className='introduce-stringbox'>
             <div className='innerbox'>
