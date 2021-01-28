@@ -10,12 +10,20 @@
   justify-content: center;
   .typ1-cont-cntt {
     text-align: center;
+
     span {
       text-transform: uppercase;
       // color:white;
       color: black;
       font-size: 30px;
       font-weight: 700;
+    }
+    .big-sp {
+      color: white;
+    }
+    .small-sp {
+      color: white;
+      font-size: 14px;
     }
   }
 }
@@ -61,7 +69,7 @@
     .small-sp {
       font-size: 18px;
       text-transform: capitalize;
-      color:white;
+      color: white;
     }
     a {
       text-emphasis: none;
@@ -70,7 +78,7 @@
       border: 1px solid white;
       padding: 5px 20px;
       border-radius: 5px;
-      &:hover{
+      &:hover {
         background-color: white;
         color: black;
       }
