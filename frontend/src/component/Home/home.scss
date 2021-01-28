@@ -398,6 +398,7 @@
   margin: auto;
   width: 1200px;
   height: 680px;
+  
   .Areas-we-services-pic1 {
     border-radius: 50%;
     // border: 1px solid black;
@@ -407,6 +408,9 @@
     background-image: url("/img/area1.png");
     background-size: cover;
     color: white;
+    &:hover{
+      transform: scale(1.05);
+    }
     .logo-title {
       font-size: 25px;
       font-weight: 600;
@@ -429,6 +433,9 @@
     background-image: url("/img/area2.png");
     background-size: cover;
     color: white;
+    &:hover{
+      transform: scale(1.05);
+    }
     .logo-title {
       font-size: 25px;
       font-weight: 600;
@@ -450,6 +457,9 @@
     background-image: url("/img/area3.png");
     background-size: cover;
     color: white;
+    &:hover{
+      transform: scale(1.05);
+    }
     .logo-title {
       font-size: 25px;
       font-weight: 600;
@@ -471,6 +481,9 @@
     background-image: url("/img/area4.png");
     background-size: cover;
     color: white;
+    &:hover{
+      transform: scale(1.05);
+    }
     .logo-title {
       font-size: 25px;
       font-weight: 600;
