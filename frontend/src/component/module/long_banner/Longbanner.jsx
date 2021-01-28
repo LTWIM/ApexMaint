@@ -62,7 +62,7 @@ const LongBanner = (props) => {
             <br/>
             <span className="small-sp">We would love to hear from you!</span>
             <br/>
-                {displayButton && <Link className="long-ban-link">Get In Touch With Us</Link>}
+                {displayButton && <Link to='/contact' className="long-ban-link">Get In Touch With Us</Link>}
             </div>
             )
           case "type5":
@@ -78,7 +78,7 @@ const LongBanner = (props) => {
             <br/>
             <span className="medium-sp">CALL US TODAY | 714.956.5032</span>
             <br/>
-            <Link className="contact-us-link">Request A Free Quote Now</Link>
+            <Link to='/contact' className="contact-us-link">Request A Free Quote Now</Link>
             </div>
             )
           case "type6":

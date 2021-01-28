@@ -1,6 +1,7 @@
 import React,{ Component } from'react'
 import './home.scss'
 import LongBanner from "../module/long_banner/Longbanner"
+import {Link} from "react-router-dom"
 export class Home extends React.Component{
   Triangle = () => {
     return(
@@ -108,9 +109,8 @@ export class Home extends React.Component{
 
         <div className='wall-paper-bottom'>
           <div className='darker'></div>
-          {/* <img  src='../img/wallpaperTop.jpg'></img> */}
           <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICIES</div>
-          <div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div>        
+          <Link to='/contact'><div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div></Link>     
         </div>
 
         <div className='introduce-cont'>
