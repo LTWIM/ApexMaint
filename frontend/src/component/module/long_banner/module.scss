@@ -66,10 +66,14 @@
     a {
       text-emphasis: none;
       text-decoration: none;
-      color: black;
-      border: 1px solid black;
+      color: white;
+      border: 1px solid white;
       padding: 5px 20px;
       border-radius: 5px;
+      &:hover{
+        background-color: white;
+        color: black;
+      }
     }
     .long-ban-link {
       margin-top: 15px;
