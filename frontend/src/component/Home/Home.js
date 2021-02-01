@@ -23,40 +23,54 @@ export class Home extends React.Component{
       <div>
         <div className='our-services-pic-cont'>
           <div className='inner'>
-            <div className='our-services-pic' object-fit="cover">
-              <img className="image" src={"/img/ourservices1.png"}/>
-              <div className='darker'/>
-              <div className='title'><span className="animated fadeIn">JANITORIAL SERVICES</span></div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices1.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'>
+                <span className="animated fadeIn">JANITORIAL SERVICES</span>
+              </div>
             </div>
-            <div className='our-services-pic'>
-              <img className="image" src={"/img/ourservices2.png"}/>
-              <div className='darker'/>
-              <div className='title'>CARPET CLEANING</div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices2.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'><span>CARPET CLEANING</span></div>
             </div>
-            <div className='our-services-pic'>
-              <img className="image" src={"/img/ourservices3.png"}/>
-              <div className='darker'/>
-              <div className='title'>CEILING </div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices3.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'><span>CEILING</span></div>
             </div>
           </div>
         </div>
 
         <div className='our-services-pic-cont' object-fit="cover">
           <div className='inner'>
-            <div className='our-services-pic'>
-              <img className="image" src={"/img/ourservices4.png"}/>
-              <div className='darker'/>
-              <div className='title' left='40px'>FLOOR STRIPING SEALING AND WAXING</div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices4.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'><span>FLOOR STRIPING SEALING AND WAXING</span></div>
             </div>
-            <div className='our-services-pic'>
-              <img className="image" src={"/img/ourservices5.png"}/>
-              <div className='darker'/>
-              <div className='title'>WINDOW CLEANING</div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices5.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'><span>WINDOW CLEANING</span></div>
             </div>
-            <div className='our-services-pic'>
-              <img className="image" src={"/img/ourservices6.png"}/>
-              <div className='darker'/>
-              <div className='title'>SUPPLIES DELIVERY</div>
+            <div className='our-services-pic' style={{ 
+                    backgroundImage: `url(/img/ourservices6.png)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize:'cover'
+                  }}>
+              <div className='darker'><span>SUPPLIES DELIVERY</span></div>
             </div>
           </div>
         </div>
@@ -125,12 +139,22 @@ export class Home extends React.Component{
                 Simply think of APEX as your business partner who works late every night.
               </div>
             </div>
-            <div className='section-cont'>
-              <div className='section-title'>Communication</div>
-              <div className='section-title'>Experience</div>
-              <div className='section-title'>Services</div>
+            <div className='section-cont' >
+
+              <div className='section-title' id='modalbtn1' >Communication</div>
+              <div className='modal' id='modal1'>
+                Communication between you and your cleaning crew is very important for those special needs you may have. With APEX , you will be assigned an account executive who will inspect and see to your specialized needs on a regular schedule. In addition, a log sheet is maintained on each account where periodic phone calls or personal inspections are made by our representatives.
+              </div>
+              <div className='section-title' id='modalbtn2'>Experience</div>
+              <div className='modal' id='modal2'>
+                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+              </div>
+              <div className='section-title' id='modalbtn3'>Services</div>
+              <div className='modal' id='modal3'>
+                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+              </div>
             </div>
-            <div className='section-textbox-cont'>
+            <div className='section-textbox-cont' >
               <div className='section-textbox'>
                 Communication between you and your cleaning crew is very important for those special needs you may have. With APEX , you will be assigned an account executive who will inspect and see to your specialized needs on a regular schedule. In addition, a log sheet is maintained on each account where periodic phone calls or personal inspections are made by our representatives.
               </div>
