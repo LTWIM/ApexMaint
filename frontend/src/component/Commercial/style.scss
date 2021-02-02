@@ -1,6 +1,13 @@
 .type-1-cont{
     background-image: url("/img/ashwini-chaudhary-iu6parqao-u-unsplash@1x.png");
     background-size:cover;
+
+    animation: backgroudMoving2 16s infinite alternate;
+}
+
+.janitorial-cont{
+    overflow: hidden;
+
 }
 .type-2-cont:nth-child(1){
     background-image: url("/img/christian-mackie-ldlu1zbjgqa-unsplash@1x.png");

@@ -13,15 +13,17 @@ const FakeData = [
 const Supplies = () => {
   return (
     <div className="supplies-wrapper">
+      <div className='supplies-banner-cont'>
       <LongBanner type='type1' backgroundImageUrl="/img/bottomLogo.svg" displayButton={false} content={<div><span className="big-sp">SUPPLIES</span>
           <br/>
           <span className="small-sp">Supplies at wholesale price delivered for free</span></div> }/>
+      </div>
       <div className="supplies-hdr-container">
         <span className="supplies-hdr">Supplies</span>
       </div>
       <div className="supplies-cntt-cntr" style={{ backgroundImage: `url(/img/restroom.png)` }}>
         {FakeData.map((ele, idx) => {
-          return <div className="supply-squares">
+          return <div className="supply-squares" >
             <span className='supply-square-spn'>{ele}</span>
           </div>
         })}

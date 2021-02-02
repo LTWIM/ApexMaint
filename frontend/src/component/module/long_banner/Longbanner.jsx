@@ -35,14 +35,14 @@ const LongBanner = (props) => {
     switch (type){
       case "type1":
         return ( 
-        <div className="typ1-cont-cntt">
+        <div className="typ1-cont-cntt" >
         {content}
         </div>
         )
       case "type2":
         return(
         <div className="typ2-cont-cont">
-        {content}
+          {content}
         </div>
         )
         case "type3":
@@ -102,7 +102,7 @@ const LongBanner = (props) => {
     }
   }
   return (
-    <div className={`${returnClassName(type)} long-ban-mod-cont`}>
+    <div className={`${returnClassName(type)} long-ban-mod-cont`} id='longbanner'>
       {renderContent(type)}
     </div>
   )
