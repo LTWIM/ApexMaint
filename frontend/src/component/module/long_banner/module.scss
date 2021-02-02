@@ -33,6 +33,9 @@
   justify-content: flex-start;
   // border: 1px solid black;
   box-shadow: inset 0 100px 500px 100px rgba(24, 25, 26, 0.74);
+  &:hover{
+    box-shadow: none;
+  }
   .typ2-cont-cont {
     display: flex;
     width: 20%;
@@ -41,7 +44,6 @@
     height: 60%;
     border-right: 2px solid white;
     // border-right: 2px solid lightgray;
-
     span {
       text-transform: uppercase;
       // color:white;
@@ -50,6 +52,7 @@
     }
   }
 }
+
 .type-3-cont {
   justify-content: center;
   
