@@ -1,7 +1,8 @@
-import React,{ Component } from'react'
-import './home.scss'
-import LongBanner from "../module/long_banner/Longbanner"
-import {Link} from "react-router-dom"
+import React,{ Component } from'react';
+import './home.scss';
+import LongBanner from "../module/long_banner/Longbanner";
+import {Link} from "react-router-dom";
+// import Video from "./Video/APEX.mp4";
 export class Home extends React.Component{
   Triangle = () => {
     return(
@@ -120,11 +121,23 @@ export class Home extends React.Component{
           <LongBanner type="type5"/>
         </div>
 
-        <div className='wall-paper-bottom-dash'>
-          <div className='darker'></div>
+        <div className='wall-paper-bottom-dash_v2'>
+          <div className='wall-paper-title-cont-V2'>
+            <div className='wall-paper-bottom-title_v2'>
+              DISINFECTIING/SANITIZING SERVICES
+            </div>
+            <Link to='/contact'><div className="wall-paper-bottom-click_v2"> GET IN TOUCH WITH US </div></Link>
+          </div>
+          <div className='video-cont'>
+            <video width="360px" height="202px" controls src={"/Video/APEX.mp4"} autoPlay loop muted/>
+            
+          </div>
+        </div>
+        {/* <div className='wall-paper-bottom-dash'>
+          <div className='darker'/>
           <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICES</div>
           <Link to='/contact'><div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div></Link>     
-        </div>
+        </div> */}
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>
@@ -141,16 +154,16 @@ export class Home extends React.Component{
             </div>
             <div className='section-cont' >
 
-              <div className='section-title' id='modalbtn1' >Communication</div>
-              <div className='modal' id='modal1'>
+              <div className='section-title' id='popupbtn1' >Communication</div>
+              <div className='popup' id='popup1'>
                 Communication between you and your cleaning crew is very important for those special needs you may have. With APEX , you will be assigned an account executive who will inspect and see to your specialized needs on a regular schedule. In addition, a log sheet is maintained on each account where periodic phone calls or personal inspections are made by our representatives.
               </div>
-              <div className='section-title' id='modalbtn2'>Experience</div>
-              <div className='modal' id='modal2'>
+              <div className='section-title' id='popupbtn2'>Experience</div>
+              <div className='popup' id='popup2'>
                 APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
               </div>
-              <div className='section-title' id='modalbtn3'>Services</div>
-              <div className='modal' id='modal3'>
+              <div className='section-title' id='popupbtn3'>Services</div>
+              <div className='popup' id='popup3'>
                 APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
               </div>
             </div>

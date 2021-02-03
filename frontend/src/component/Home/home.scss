@@ -88,6 +88,61 @@
 //   }
 // }
 
+.wall-paper-bottom-dash_v2{
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1440px;
+  height: 305px;
+  border: 1px solid;
+  background-image: url("/img/pexels-michelangelo-buonarroti-4176369@1x.png");
+  background-position: 50% 100%;
+  box-shadow: inset 0 100px 500px 100px rgba(0, 0, 0, 0.4);
+  display: flex;
+  .wall-paper-title-cont-V2{
+    display: block;
+    width: 65%;
+    // border:1px solid white;
+  }
+  .video-cont{
+    margin:auto;
+  }
+  .wall-paper-bottom-title_v2{
+    padding-left: 100px;
+    padding-top: 100px;
+    text-align: center;
+    width: 50%;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 1.23px;
+    color: #fafafa;
+  }
+  .wall-paper-bottom-click_v2{
+    margin-top: 40px;
+    margin-left: 215px;
+    border: 2px solid;
+    border-radius: 17px;
+    height: 30px;
+    width: 210px;
+    color: #fafafa;
+    text-align: center;
+    padding: 15px 10px 3px 10px;
+    font-weight: 600;
+    
+    
+    &:hover {
+      border: 3px solid;
+      cursor: pointer;
+    }
+    &:active {
+      margin-top: 43px;
+      border: 3px solid;
+      color: white;
+    }
+  }
+}
+
+
 .wall-paper-bottom-dash {
   position: relative;
   margin-top: 40px;
@@ -347,41 +402,41 @@
   }
 }
 
-#modalbtn1:hover + #modal1{
+#popupbtn1:hover + #popup1{
   display: block;
   opacity: 1;
-  animation: modalDown 1s forwards;
-  @keyframes modalDown {
+  animation: popupDown 1s forwards;
+  @keyframes popupDown {
     0%{margin-top: 45px;}
     100%{margin-top: 50px;}
   }
 }
-#modalbtn2:hover + #modal2{
+#popupbtn2:hover + #popup2{
   display: block;
   opacity: 1;
-  animation: modalDown 1s forwards;
-  @keyframes modalDown {
+  animation: popupDown 1s forwards;
+  @keyframes popupDown {
     0%{margin-top: 45px;}
     100%{margin-top: 50px;}
   }
 }
-#modalbtn3:hover + #modal3{
+#popupbtn3:hover + #popup3{
   display: block;
   opacity: 1;
-  animation: modalDown 1s forwards;
-  @keyframes modalDown {
+  animation: popupDown 1s forwards;
+  @keyframes popupDown {
     0%{margin-top: 45px;}
     100%{margin-top: 50px;}
   }
 }
 
-.modal{
+.popup{
   display: none;
   margin-top: 45px;
   opacity: 0;
   padding: 15px;
   position: absolute;
-  background-color:#fffcf6 ;
+  background-color:white ;
   width: 600px;
   height: 300px;
   border: 5px solid #004890;
