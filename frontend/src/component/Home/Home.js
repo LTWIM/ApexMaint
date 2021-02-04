@@ -113,10 +113,9 @@ export class Home extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className='Home-cont'>
         <div className='wall-paper-top-cont'>
           <div className='wall-paper-top'>
-            <div className='wall-paper-dark'/>
           </div>
           <LongBanner type="type5"/>
         </div>

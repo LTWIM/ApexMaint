@@ -14,8 +14,10 @@
 }
 
 .backgroundSheet{
- background-color: #fffcf6;
- width: 100%;
+  background-color: #fffcf6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .web-container{
