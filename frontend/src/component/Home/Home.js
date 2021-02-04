@@ -164,7 +164,7 @@ export class Home extends React.Component{
               </div>
               <div className='section-title' id='popupbtn3'>Services</div>
               <div className='popup' id='popup3'>
-                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+                APEX will provide you with a customized work schedule based on your site-specific requirements. We recognize, understand and acknowledge the importance of a clean working environment, That is why we are dedicated to improving the appearance of your facilities with our thorough, detailed, professional and personalized services.
               </div>
             </div>
             <div className='section-textbox-cont' >
@@ -175,7 +175,8 @@ export class Home extends React.Component{
                 APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
               </div>
               <div className='section-textbox'>
-                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+                APEX will provide you with a customized work schedule based on your site-specific requirements. We recognize, understand and acknowledge the importance of a clean working environment, That is why we are dedicated to improving the appearance of your facilities with our thorough, detailed, professional and personalized services.
+
               </div>
             </div>  
           </div>
