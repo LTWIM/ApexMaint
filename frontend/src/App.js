@@ -23,7 +23,7 @@ export class App extends React.Component{
                 <Route path="/contact" component={Contact} exact />
               </Switch>  
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </BrowserRouter>
         
       </div>

@@ -6,7 +6,7 @@ import "./style.scss"
 export class Commercial extends React.Component{
   render(){
         return(
-            <div>
+            <div className='commercial-cont'>
             <div className='janitorial-cont'>
                 <LongBanner type="type1" content={<span className='big-sp'>janitorial services<br/><span className="small-sp">commercial cleaning services</span></span>}/>
               

@@ -127,10 +127,10 @@ export class Home extends React.Component{
             </div>
             <Link to='/contact'><div className="wall-paper-bottom-click_v2"> GET IN TOUCH WITH US </div></Link>
           </div>
-          <div className='video-cont'>
+          {/* <div className='video-cont'>
             <video width="360px" height="202px" controls src={"/Video/APEX.mp4"} autoPlay loop muted/>
             
-          </div>
+          </div> */}
         </div>
         {/* <div className='wall-paper-bottom-dash'>
           <div className='darker'/>
@@ -147,7 +147,7 @@ export class Home extends React.Component{
               <div className='introduce-string-title'>About APEX Business Maintenance, Inc</div>
               <div className='introduce-string-textbox1'>
                 APEX has been serving for over 30 years of experience and a staff committed to the best customer service. Our professional maintenance crews are licensed, insured, bonded and they have years of experience in the industry. We are not only dedicated to enhancing the visual appeal of your facility, but also providing a more sanitary environment  and healthier place of business. 
-              <div>
+              <div className='introduce-string-textbox2'>
                 Simply think of APEX as your business partner who works late every night.
               </div>
             </div>
