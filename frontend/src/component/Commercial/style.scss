@@ -7,6 +7,13 @@
 
     animation: backgroudMoving2 16s infinite alternate;
 }
+@media screen and (max-width: 440px){
+    .type-1-cont{
+        background-image: url("/img/ashwini-chaudhary-iu6parqao-u-unsplash@1x.png");
+        background-size:cover;
+        display: none;
+    }
+}
 
 .janitorial-cont{
     overflow: hidden;

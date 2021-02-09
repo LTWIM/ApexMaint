@@ -27,8 +27,7 @@
       font-size: 18px;
       display: flex;
       justify-content: center; 
-      text-align:center;
-      
+      text-align:center; 
     }
   }
   .wall-paper-bottom {
@@ -39,15 +38,17 @@
     height: 305px;
   }
   .introducing{
+    width: 80%;
     padding-top: 30px;
     // border: 1px solid;
     height: 90px;
-    margin-left: 150px;
+    margin:auto;
     font-size: 36px;
   }
   .red-title{
     // border: 1px solid;
-    margin-left: 150px;
+    width: 80%;
+    margin: auto;
     font-size: 26px;
     font-family: Gill Sans;
     font-weight: 600;
@@ -62,7 +63,8 @@
   .red-title_v2{
     // border: 1px solid;
     padding-top: 80px;
-    margin-left: 150px;
+    width: 80%;
+    margin: auto;
     font-size: 26px;
     font-family: Gill Sans;
     font-weight: 600;
@@ -76,7 +78,8 @@
   .text{
     // border: 1px solid;
     padding-top: 20px;
-    margin-left: 150px;
+    width: 80%;
+    margin: auto;
     font-family: Gill Sans;
     font-size: 18px;
     font-weight: normal;
@@ -89,8 +92,10 @@
   }
 
   .highlightText{
+    width: 100%;
+    text-align: center;
+    // border: 1px solid;
     padding-top: 60px;
-    margin-left: 150px;
     font-size: 30px;
     font-family: Gill Sans;
     font-size: 41px;
@@ -99,13 +104,13 @@
     font-style: normal;
     line-height: 1.37;
     letter-spacing: normal;
-    text-align: left;
     color: #000000;
   }
   .highlightText_v2{
     padding-top: 50px;
-    
-    margin-left: 194px;
+    // border: 1px solid;
+    width: 70%;
+    margin: auto;
     margin-bottom: 20px;
     font-size: 30px;
     font-family: SegoeUI;
@@ -141,8 +146,22 @@
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    margin-left: 240px;
+    width: 65%;
+    margin: auto;
   }
 
 }
   
+@media screen and (max-width: 440px){
+
+  .disinfecting{
+    .sub-title{
+      margin-top: 50px;
+    }
+    .introducing{
+      font-size: 25px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+}

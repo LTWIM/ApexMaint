@@ -25,8 +25,8 @@ export class App extends React.Component{
           </div>
           {/* <Footer/> */}
         </BrowserRouter>
-        
-      </div>
+        </div>
+
       
     )
   }
