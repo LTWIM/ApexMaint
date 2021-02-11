@@ -1,8 +1,18 @@
+.commercial-cont{
+    width: 100%;
+}
 .type-1-cont{
     background-image: url("/img/ashwini-chaudhary-iu6parqao-u-unsplash@1x.png");
     background-size:cover;
 
     animation: backgroudMoving2 16s infinite alternate;
+}
+@media screen and (max-width: 440px){
+    .type-1-cont{
+        background-image: url("/img/ashwini-chaudhary-iu6parqao-u-unsplash@1x.png");
+        background-size:cover;
+        display: none;
+    }
 }
 
 .janitorial-cont{
@@ -32,4 +42,23 @@
 .typ3-cont-cont {
     background-image: url("/img/gabrielle-henderson-hjckknwcxxq-unsplash@1x.png");
     background-size:cover;
+}
+
+.long-ban-t2-rightside{
+    border: 3px hidden;
+    padding: 0px 15px 0px 15px;
+    color: white;
+    font-size: 24px;
+}
+#longbanner:hover .long-ban-t2-rightside{
+    font-size: 27px;
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 1s;
+    // height: 90%;
+    width: 70%;
+    margin: auto;
+    
+}
+.typ2-banner-cntt{
+    padding: 0px 15px 0px 15px;
 }

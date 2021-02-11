@@ -3,12 +3,12 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 import LongBanner from '../module/long_banner/Longbanner'
 import "./styles.scss"
 const FakeData = [
-  "Restroom",
-  "Restroom",
-  "Restroom",
-  "Restroom",
-  "Restroom",
-  "Restroom"
+  "TOILET TISSUE",
+  "PAPER TOWEL",
+  "SEAT COVERS",
+  "TRASH BAGS & LINERS",
+  "SOAPS & SKIN CARE",
+  "ODOR CONTRAL & URINAL PRODUCT"
 ]
 const Supplies = () => {
   return (

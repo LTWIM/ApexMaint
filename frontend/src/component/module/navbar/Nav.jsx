@@ -3,6 +3,25 @@ import { NavLink, Link } from "react-router-dom";
 import "./nav.css";
 
 export default class Nav extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      renderPopup: false
+    }
+    this.renderPopup = this.renderPopup.bind(this)
+  }
+
+  renderPopup(){
+    const{renderPopup} = this.props;
+    return renderPopup ? <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div> : <div/>
+  }
   render() {
     return (
       <div style={{ position: "fixed", zIndex: 1, width:"100%", backgroundColor: "rgb(255, 252, 246)"}}>
@@ -31,6 +50,10 @@ export default class Nav extends React.Component {
           <NavLink to="/contact">
             <span className="CONTACT">CONTACT</span>
           </NavLink>
+        </nav>
+        <nav className='nav-mobile'>
+          <hamburger onClick={ () => this.setState({renderPopup: !this.state.renderPopup})} />
+          {this.renderPopup}
         </nav>
       </div>
     );

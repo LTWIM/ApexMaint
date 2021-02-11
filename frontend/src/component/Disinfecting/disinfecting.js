@@ -8,7 +8,7 @@ export class disinfecting extends React.Component{
   
   render(){
     const Offices =["Desk surfaces", "Chair arms", "Doorknobs", "Light Switches", "Phones", "Keyboard", "Mouse devices", "Office machinery" ]
-    const Common = ["Door handles", "Door handles", "Entryway doors", "Elevator buttons","Cabinet handles"]
+    const Common = ["Door handles","Entryway doors","Handrails", "Elevator buttons","Cabinet handles"]
     const Lunchrooms = ["Tables","Chair arms", "Sinks", "Water dispenser", "Light switches"];
     const Restrooms =["Toilets", "Faucets", "sinks", "Doorknobs", "Light switches", "Keyboard"];
     

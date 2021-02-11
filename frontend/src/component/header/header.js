@@ -1,18 +1,22 @@
+
+//"http://www.shawnolson.net/scripts/public_smo_scripts.js"
 import React,{Component} from 'react'
 import './header.scss';
 import {ReactComponent as HeaderLogo} from '../img/headerLogo.svg';
 // import { APEXLOGO } from '/img/ASSETS/APEXLOGO.png';
 import {Link} from 'react-router-dom'
 export class header extends React.Component{
+
   render(){
     return(
-      <div>
-        <div className='main-logo-top'>
-          <div className='main-logo'>
-          <Link to="/">
-            {/* Logo Pic */}
-            <img src="/logo/apexOld.png" width='100%'/>
-          </Link>
+      <div className='header-cont'>
+        <div className='mobile-header-cont'>
+          <div className='main-logo-top'>
+            <div className='main-logo'>
+              <Link to="/">
+                <img src="/logo/apexOld.png" width='100%'/>
+              </Link>
+            </div>
           </div>
         </div>
         <div className='category-cont'>

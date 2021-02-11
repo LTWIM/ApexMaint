@@ -113,10 +113,9 @@ export class Home extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className='Home-cont'>
         <div className='wall-paper-top-cont'>
           <div className='wall-paper-top'>
-            <div className='wall-paper-dark'/>
           </div>
           <LongBanner type="type5"/>
         </div>
@@ -128,10 +127,10 @@ export class Home extends React.Component{
             </div>
             <Link to='/contact'><div className="wall-paper-bottom-click_v2"> GET IN TOUCH WITH US </div></Link>
           </div>
-          <div className='video-cont'>
+          {/* <div className='video-cont'>
             <video width="360px" height="202px" controls src={"/Video/APEX.mp4"} autoPlay loop muted/>
             
-          </div>
+          </div> */}
         </div>
         {/* <div className='wall-paper-bottom-dash'>
           <div className='darker'/>
@@ -148,7 +147,7 @@ export class Home extends React.Component{
               <div className='introduce-string-title'>About APEX Business Maintenance, Inc</div>
               <div className='introduce-string-textbox1'>
                 APEX has been serving for over 30 years of experience and a staff committed to the best customer service. Our professional maintenance crews are licensed, insured, bonded and they have years of experience in the industry. We are not only dedicated to enhancing the visual appeal of your facility, but also providing a more sanitary environment  and healthier place of business. 
-              <div>
+              <div className='introduce-string-textbox2'>
                 Simply think of APEX as your business partner who works late every night.
               </div>
             </div>
@@ -164,7 +163,7 @@ export class Home extends React.Component{
               </div>
               <div className='section-title' id='popupbtn3'>Services</div>
               <div className='popup' id='popup3'>
-                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+                APEX will provide you with a customized work schedule based on your site-specific requirements. We recognize, understand and acknowledge the importance of a clean working environment, That is why we are dedicated to improving the appearance of your facilities with our thorough, detailed, professional and personalized services.
               </div>
             </div>
             <div className='section-textbox-cont' >
@@ -175,7 +174,8 @@ export class Home extends React.Component{
                 APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
               </div>
               <div className='section-textbox'>
-                APEX takes pride in integrity and expertise. Throughly trained on all standardized cleaning procedures, each APEX personnel services your building as their own. You can be assured that your company will benefit from our experience and ability to perform consistently and effectively.
+                APEX will provide you with a customized work schedule based on your site-specific requirements. We recognize, understand and acknowledge the importance of a clean working environment, That is why we are dedicated to improving the appearance of your facilities with our thorough, detailed, professional and personalized services.
+
               </div>
             </div>  
           </div>

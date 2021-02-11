@@ -101,6 +101,7 @@
   justify-content: flex-start;
   z-index: 2;
   // border: 1px solid black;
+
   .typ5-cont-cont {
     color: white;
     display: flex;
@@ -114,7 +115,7 @@
 
     span.big-sp {
       height: 50px;
-      width: 650px;
+      width: 100%;
       font-size: 30px;
       font-weight: 600;
       line-height: 1.37;
@@ -130,8 +131,12 @@
       font-style: normal;
       line-height: 1.33;
       letter-spacing: normal;
-
       // font-family: OpenSans;
+    }
+    @media screen and (max-width: 440px){
+      span.small-sp{
+        display: none;
+      }
     }
     span.small-sp:nth-child(5) {
       margin-top: -15px;
@@ -167,6 +172,12 @@
         border: 3px solid;
         color: white;
       }
+    }
+  }
+  @media screen and (max-width: 440px){
+    .typ5-cont-cont{
+      width: 100%;
+      margin-left: 5%;
     }
   }
 }

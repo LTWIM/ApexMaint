@@ -104,6 +104,10 @@ const LongBanner = (props) => {
   return (
     <div className={`${returnClassName(type)} long-ban-mod-cont`} id='longbanner'>
       {renderContent(type)}
+      {type === 'type2' &&(
+        <div className='long-ban-t2-rightside'>
+         {props.sideContent}
+        </div>)}
     </div>
   )
 }
