@@ -22,10 +22,12 @@ export default class Footer extends React.Component {
             <div className="phone">
               {" "}
               <p>
-                Phone: 714.956.5032
+                Phone: 714-956-5032
                 <br />
-                <br />
+                {/* <br /> */}
                 Fax: 714-956-8196{" "}
+                <br/>
+                <div className='mobile-email'>Email: info@apexmaint.com</div>
               </p>
             </div>
             </div>
