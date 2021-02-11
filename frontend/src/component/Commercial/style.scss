@@ -51,14 +51,11 @@
     font-size: 24px;
 }
 #longbanner:hover .long-ban-t2-rightside{
-    font-size: 27px;
     background-color: rgba(0,0,0,0.8);
     transition: background-color 1s;
-    // height: 90%;
-    width: 70%;
-    margin: auto;
     
 }
-.typ2-banner-cntt{
-    padding: 0px 15px 0px 15px;
+#longbanner:hover .typ2-banner-cntt{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 1s;
 }
