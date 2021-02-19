@@ -28,6 +28,27 @@
     }
   }
 }
+.type-1-1cont {
+  justify-content: center;
+  .typ1-cont-cntt {
+    text-align: center;
+
+    span {
+      text-transform: uppercase;
+      // color:white;
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .big-sp {
+      color: white;
+    }
+    .small-sp {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
 
 .type-2-cont {
   justify-content: flex-start;

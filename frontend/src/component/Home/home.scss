@@ -520,8 +520,7 @@
   flex-wrap: wrap;
   // border: 1px solid;
   padding-top: 60px;
-  margin-top: 20px;
-  margin: auto;
+  margin: 20px auto 80px auto;
   width: 98%;
   justify-content: center;
   // height: 680px;
@@ -900,4 +899,8 @@
       } 
     }
   }
+}
+
+video::-webkit-media-controls {
+  display: none;
 }

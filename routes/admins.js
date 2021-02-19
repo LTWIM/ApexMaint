@@ -1,11 +1,13 @@
 const express = require("express");
 const { route } = require("./client");
 const router = express.Router();
-const Admin = require("../models/Admin")
+const Admin = require("../models/Admin");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const keys = require("../config/keys")
+const keys = require("../config/keys");
 const ObjectId = require("mongoose").Types.ObjectId;
+const nodemailer = require("nodemailer");
+const mg = require("nodemailer-mailgun-transport");
 
 router.post("/sign-up", async (req, res, next) => {
   debugger
@@ -122,4 +124,31 @@ router.put("/update_user_password", async (req, res) => {
 
 })
 
+// nodemailer
+router.post("/send-mail", async(req, res) => {
+  const auth = {
+    auth: {
+      api_key: 'c438a59ca492f2683e07ea7e675a351e-d32d817f-cb01a3ec',
+      domain: 'sandboxe05aff24e0d747f1912a8073562ad2d2.mailgun.org'
+    }
+  }
+
+  const nodemailerMailgun = await nodemailer.createTransport(mg(auth));
+
+  nodemailerMailgun.sendMail({
+    from: 'manha1895@gmail.com',
+    to: 'manha1895@hotmail.com',
+    subject: 'Test MailGun',
+    'h:Reply-To': 'reply2this@company.com',
+    html: '<b>Wow Big powerful letters</b>',
+    text: 'Mailgun rocks, pow pow!'
+}, (err, info) => {
+     if (err) {
+       console.log(`Error: ${err}`);
+     }
+     else {
+       console.log(`Response: ${info}`);
+     }
+  })
+})
 module.exports = router;

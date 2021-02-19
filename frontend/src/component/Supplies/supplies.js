@@ -14,7 +14,7 @@ const Supplies = () => {
   return (
     <div className="supplies-wrapper">
       <div className='supplies-banner-cont'>
-      <LongBanner type='type1' backgroundImageUrl="/img/bottomLogo.svg" displayButton={false} content={<div><span className="big-sp">SUPPLIES</span>
+      <LongBanner type='type1-1' backgroundImageUrl="/img/bottomLogo.svg" displayButton={false} content={<div><span className="big-sp">SUPPLIES</span>
           <br/>
           <span className="small-sp">Supplies at wholesale price delivered for free</span></div> }/>
       </div>
