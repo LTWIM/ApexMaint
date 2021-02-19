@@ -127,10 +127,10 @@ export class Home extends React.Component{
             </div>
             <Link to='/contact'><div className="wall-paper-bottom-click_v2"> GET IN TOUCH WITH US </div></Link>
           </div>
-          {/* <div className='video-cont'>
-            <video width="360px" height="202px" controls src={"/Video/APEX.mp4"} autoPlay loop muted/>
+          <div className='video-cont'>
+            <video width="360px" height="202px" controls src={"/Video/Fumigation.mp4"} autoPlay loop muted/>
             
-          </div> */}
+          </div>
         </div>
         {/* <div className='wall-paper-bottom-dash'>
           <div className='darker'/>

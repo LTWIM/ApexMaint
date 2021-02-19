@@ -14,6 +14,8 @@ const LongBanner = (props) => {
     switch (type){
       case "type1":
         return 'type-1-cont'
+      case "type1-1":
+        return 'type-1-1cont'
       case "type2":
         return 'type-2-cont'
       case "type3":
@@ -34,6 +36,12 @@ const LongBanner = (props) => {
   const renderContent = (type) => {
     switch (type){
       case "type1":
+        return ( 
+        <div className="typ1-cont-cntt" >
+        {content}
+        </div>
+        )
+      case "type1-1":
         return ( 
         <div className="typ1-cont-cntt" >
         {content}
