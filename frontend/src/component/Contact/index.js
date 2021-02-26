@@ -1,11 +1,17 @@
 import React from 'react'
 import "./styles.scss"
 import LongBanner from '../module/long_banner/Longbanner'
+import {Helmet} from 'react-helmet'
 
 const Contact = () => {
 
   return (
     <div className='contact-wrapper'>
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="With a single phone call, virtually all your maintenance needs can be handled with a professional approach and personalized service."/>
+        <meta name="keywords"  content=""/>
+      </Helmet>
       <LongBanner type='type4' backgroundImageUrl="/img/bottomLogo.svg" displayButton={false}/>
       <div className="contact-cntt-cnt">
         <div className='contct-cnnt-hdr'>

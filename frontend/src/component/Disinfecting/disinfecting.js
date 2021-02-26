@@ -4,6 +4,7 @@ import LongBanner from '../module/long_banner/Longbanner'
 import Squre from '../module/square/Square'
 import Rectangle from '../module/rectangle/rectangle'
 import './disinfecting.scss'
+import {Helmet} from 'react-helmet'
 export class disinfecting extends React.Component{
   
   render(){
@@ -14,6 +15,40 @@ export class disinfecting extends React.Component{
     
     return(
       <div className='disinfecting'>
+        <Helmet>
+          <title>Disinfecting</title>
+          <meta name="description" content="With over 30 years of experience in the cleaning industry APEX has now teamed up with EPA approved disinfectants and drastic measures that strictly adhere to the CDC guidelines for our disinfecting application process."/>
+          <meta name="keywords"  content="
+          sanitization,
+          disinfectant,
+          household disinfectant,
+          lysol disinfect,
+          sanitation,
+          uv sanitizing,
+          homemade disinfectant,
+          cleaning disinfectant,
+          electrolyzed water,
+          natural disinfectant,
+          electrostatic disinfection,	
+          windex disinfectant,
+          diy disinfectant,
+          sanitise,
+          clorox anywhere,
+          carpet disinfectant,
+          epa disinfectant,
+          best disinfectant,
+          air disinfectant,
+          disinfectant company,
+          sanitizing with bleach,
+          shockwave disinfectant,
+          fabric disinfectant,
+          bleach water disinfectant,
+          disinfectant liquid,
+          phenol disinfectant,
+          commercial disinfectant,
+          vodka as disinfectant
+          "/>
+        </Helmet>
         <div className='wall-paper-top'>
           <div className='title'>Disinfecting • Sanitizing Services</div>
           <div className='sub-title'>WE KEEP YOUR WORK PLACE HEALTHY</div>
