@@ -2,6 +2,7 @@ import React,{ Component } from'react';
 import './home.scss';
 import LongBanner from "../module/long_banner/Longbanner";
 import {Link} from "react-router-dom";
+import {Helmet} from "react-helmet";
 // import Video from "./Video/APEX.mp4";
 export class Home extends React.Component{
   Triangle = () => {
@@ -82,28 +83,29 @@ export class Home extends React.Component{
   Circle = () => {
     return(
       <div className='Areas-we-services-pic-cont'>
+        
         <div className='Areas-we-services-pic1'>
           <div className='logo-title'>
             <div>Los Angeles</div>
-            <div>Country</div>
+            <div>County</div>
           </div>
         </div>
         <div className='Areas-we-services-pic2'>
           <div className='logo-title'>
             <div>Orange </div>
-            <div>Country</div>
+            <div>County</div>
           </div>
         </div>
         <div className='Areas-we-services-pic3'>
           <div className='logo-title'>
             <div>Riverside</div>
-            <div>Country</div>
+            <div>County</div>
           </div>
         </div>
         <div className='Areas-we-services-pic4'>
           <div className='logo-title'>
             <div>San Bernardino</div>
-            <div>Country</div>
+            <div>County</div>
           </div> 
         </div>
       </div>  
@@ -114,6 +116,111 @@ export class Home extends React.Component{
   render(){
     return(
       <div className='Home-cont'>
+        <Helmet>
+          <title>Home</title>
+          <meta name="description" content="Commercial Cleaning for Any Industry Whether your company makes its home in an office building, clinic or school, we deliver professional commercial cleaning services that help promote healthy work environments and keep your buildings sparkling."/>
+          <meta name="keywords"  content="
+          cleaning services commercial,
+          commercial cleaning service,
+          commercial cleaning services,
+          commercial cleaning,
+          commercial pressure washing,
+          commercial carpet cleaner,
+          commercial carpet cleaning,
+          office cleaning,
+          office cleaning services,
+          commercial cleaning supplies,
+          commercial steam cleaner,
+          business cleaning,
+          commercial cleaning services near me,
+          professional commercial cleaning services,
+          commercial cleaning companies,
+          commercial cleaning company,
+          commercial carpet cleaning machines,
+          office cleaning services near me,
+          commercial window cleaning,
+          commercial disinfecting,
+          commercial floor cleaner,
+          commercial sanitizing,
+          commercial cleaning companies near me,
+          office cleaning companies,
+          carpet cleaner for business,
+          commercial cleaners near me,
+          restaurant cleaning,
+          cleaning company services,
+          building cleaning,
+          commercial cleaning products,
+          commercial cleaning contractors,
+          commercial cleaning contracts,
+          floor cleaning company,
+          office cleaners near me,
+          commercial carpet extractors,
+          stanley steemer commercial,
+          commercial kitchen cleaning,
+          how to start a commercial cleaning business,
+          commercial carpet shampooers,
+          commercial window washing,
+          commercial office cleaning services,
+          medical office cleaning,
+          commercial carpet steam cleaner,
+          tot commercial cleaning,
+          commercial office cleaning,
+          commercial kitchen cleaning services,
+          bissell biggreen bg10,
+          office cleaning companies near me,
+          commercial cleaning jobs,
+          commercial cleaning supplies,
+          commercial kitchen supplies,
+          business cleaning supplies,
+          office cleaning supply,
+          commercial cleaning products,
+          commercial janitorial supplies near me,
+          commercial cleaning supplies near me,
+          commercial janitorial supplies,
+          commercial steam mops,
+          commercial greenhouse supplies,
+          commercial cleaning equipment,
+          commercial cleaning products wholesale,
+          commercial pest control supplies near me,
+          commercial bathroom supplies,
+          hand soap dispenser commercial,
+          eco friendly commercial cleaning products,
+          commercial bakery supplies wholesale,
+          commercial restroom supplies,
+          commercial bathroom cleaners,
+          commercial window cleaning supplies,
+          commercial supplies near me,
+          disinfectant wipes commercial,
+          commercial supplies distributors,
+          office cleaning products,
+          commercial green cleaning products,
+          commercial cleaning supply company,
+          business cleaning products,
+          commercial business supply,
+          commercial chain link fence supplies near me,	
+          best commercial cleaning products,
+          commercial supply company,
+          commercial cleaning chemicals,
+          commercial cleaning products near me,
+          zep window cleaner concentrate,
+          commercial grade disinfectant wipes,
+          commercial suppliers,
+          servicemaster cleaning products,
+          commercial cleaning supplies wholesale,
+          commercial kitchen cleaning products,
+          commercial grade cleaning supplies,
+          office cleaning supplies near me,
+          best smelling commercial cleaning products,
+          commercial cleaning equipment for sale,
+          commercial restroom supplies near me,
+          zep quick clean disinfectant spray,
+          commercial bathroom supplies wholesale,
+          commercial carpet cleaning supplies,
+          commercial window cleaning products,
+          office cleaning supplies wholesale,
+          commercial eco cleaning products"
+          />
+        </Helmet>
         <div className='wall-paper-top-cont'>
           <div className='wall-paper-top'>
           </div>
@@ -132,11 +239,8 @@ export class Home extends React.Component{
             
           </div>
         </div>
-        {/* <div className='wall-paper-bottom-dash'>
-          <div className='darker'/>
-          <div className='wall-paper-bottom-title'>DISINFECTIING/SANITIZING SERVICES</div>
-          <Link to='/contact'><div className='wall-paper-bottom-click'>GET IN TOUCH WITH US</div></Link>     
-        </div> */}
+        {/* 
+         */}
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>

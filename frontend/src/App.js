@@ -11,7 +11,6 @@ export class App extends React.Component{
     return(
       <div className = 'backgroundSheet'>
         <BrowserRouter>
-
           <Header/>
             <div className='web-container'> 
               <Switch>    
@@ -26,8 +25,6 @@ export class App extends React.Component{
           <Footer/>
         </BrowserRouter>
         </div>
-
-      
     )
   }
 }
