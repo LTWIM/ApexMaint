@@ -12,11 +12,13 @@ const bodyParser = require("body-parser");
 // const passport = require("passport");
 // require("./config/passport")(passport);
 const path = require("path");
-
+const helmet = require("helmet");
 //View engine set up
 app.engine("handlebars", exphbs());
 app.set("view enginge", "handlebars");
-
+app.use(helmet({
+  contentSecurityPolicy: false,
+}));
 // static folder set up as using public folders
 // app.use('/')
 
