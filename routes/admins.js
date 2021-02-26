@@ -8,8 +8,7 @@ const keys = require("../config/keys");
 const ObjectId = require("mongoose").Types.ObjectId;
 const nodemailer = require("nodemailer");
 const mg = require("nodemailer-mailgun-transport");
-const api_key = require("../config/keys_dev").mailGunAuthApiKey;
-const mailgun = require("mailgun-js")({apiKey: api_key, domain:'alleve.ai'});
+const mailgun = require("mailgun-js")({apiKey: keys.mailGunAuthApiKey, domain:'alleve.ai'});
 const { februaryEmail } = require("../email_templates/index");
 
 const testEmailArray = [
