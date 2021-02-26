@@ -3,5 +3,6 @@ module.exports = {
   secretOrKey: process.env.SECRET_OR_KEY,
   awsSecretKey: process.env.awsSecretKey,
   awsAccessKey: process.env.awsAccessKey,
-  awsRegion: process.env.awsRegion,
+  mailGunAuthApiKey:process.env.mailGunAuthApiKey
+
 };
