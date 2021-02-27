@@ -2,7 +2,7 @@ import React,{ Component } from'react';
 import './home.scss';
 import LongBanner from "../module/long_banner/Longbanner";
 import {Link} from "react-router-dom";
-// import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet";
 // import Video from "./Video/APEX.mp4";
 export class Home extends React.Component{
   Triangle = () => {
