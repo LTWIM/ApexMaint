@@ -9,7 +9,7 @@ export class Commercial extends React.Component{
         return(
             <div className='commercial-cont'>
                 <Helmet>
-                    <title>Commercial Cleaning</title>
+                    <title>Apex-Commercial Cleaning</title>
                     <meta name="description" content="Professional Commercial Cleaning for Los Angeles, Orange County, Riverside, San Bernardino"/>
                     <meta name="keywords"  content="
                     cleaning services commercial,

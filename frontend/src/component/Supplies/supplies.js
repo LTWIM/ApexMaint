@@ -16,7 +16,7 @@ const Supplies = () => {
   return (
     <div className="supplies-wrapper">
       <Helmet>
-        <title>Supplies</title>
+        <title>Apex-Supplies</title>
         <meta name="description" content="With over 30 years of experience in the cleaning industry APEX has now teamed up with EPA approved disinfectants and drastic measures that strictly adhere to the CDC guidelines for our disinfecting application process."/>
         <meta name="keywords"  content="
         carpet cleaning,

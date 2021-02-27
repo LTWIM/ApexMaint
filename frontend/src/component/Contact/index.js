@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='contact-wrapper'>
       <Helmet>
-        <title>Contact</title>
+        <title>Apex-Contact</title>
         <meta name="description" content="With a single phone call, virtually all your maintenance needs can be handled with a professional approach and personalized service."/>
         <meta name="keywords"  content=""/>
       </Helmet>

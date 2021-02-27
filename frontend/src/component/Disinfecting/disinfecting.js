@@ -16,7 +16,7 @@ export class disinfecting extends React.Component{
     return(
       <div className='disinfecting'>
         <Helmet>
-          <title>Disinfecting</title>
+          <title>Apex-Disinfecting</title>
           <meta name="description" content="With over 30 years of experience in the cleaning industry APEX has now teamed up with EPA approved disinfectants and drastic measures that strictly adhere to the CDC guidelines for our disinfecting application process."/>
           <meta name="keywords"  content="
           sanitization,
