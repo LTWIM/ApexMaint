@@ -1,6 +1,6 @@
 import './App.css';
 import React,{ Component} from 'react';
-import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact, Unsubscribe, Unsubscribed} from './component/index';
+import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact, Unsubscribe, Unsubscribed, FourOfour} from './component/index';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Tester from "./component/testing/create_user_test"
 export class App extends React.Component{
@@ -22,6 +22,7 @@ export class App extends React.Component{
                 <Route path="/contact" component={Contact} exact />
                 <Route path="/Unsubscribe" component={Unsubscribe} exact></Route>
                 <Route path="/Unsubscribed" component={Unsubscribed} exact></Route>
+                <Route path="/404" component={FourOfour} exact></Route>
               </Switch>  
           </div>
           <Footer/>

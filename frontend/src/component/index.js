@@ -7,3 +7,4 @@ export { default as Supplies } from './Supplies/supplies'
 export { default as Contact } from "./Contact";
 export { default as Unsubscribe } from './Unsubscribe/unsubscribe';
 export { default as Unsubscribed } from './Unsubscribed/unsubscribed';
+export { default as FourOfour } from './404/404';
