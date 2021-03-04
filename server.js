@@ -6,6 +6,7 @@ const exphbs = require("express-handlebars");
 const db = require("./config/keys").mongoURI;
 // Imports created routes.
 const Admins = require("./routes/admins")
+const Emailer = require("./routes/mailer/sendMail")
 // Allows us to parse the json sent to the front end.
 const bodyParser = require("body-parser");
 // Verifies incoming request tokens to project routes.
@@ -61,6 +62,7 @@ app.use(
 
 // We must tell Express to use imported routes.
 app.use("/api/admins", Admins)
+app.use("/api/emailer", Emailer)
 // Tells Express to start a socket and listen for connections on the path.
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
