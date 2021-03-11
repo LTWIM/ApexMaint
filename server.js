@@ -24,7 +24,17 @@ app.use(helmet({
 // app.use('/')
 
 // __dirname is used to designate current folderd
-
+app.use(
+  bodyParser.urlencoded({
+    limit: "50mb",
+    extended: false,
+    parameterLimit: 100000,
+  })
+);
+// Parse application/json.
+app.use(
+  bodyParser.json({ limit: "50mb", extended: false, parameterLimit: 100000 })
+);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
   app.get("/", (req, res) => {
@@ -42,23 +52,13 @@ mongoose
 const port = process.env.PORT || 5000;
 
 // Sets up a basic route so that we can render some information on our page.
-app.get("/", (req, res) => res.send("Checking Test"));
+// app.get("/", (req, res) => res.send("Checking Test"));
 
 // Sets passport as the bouncer.
 // app.use(passport.initialize());
 
 // Parse application/x-www-form-urlencoded.
-app.use(
-  bodyParser.urlencoded({
-    limit: "50mb",
-    extended: false,
-    parameterLimit: 100000,
-  })
-);
-// Parse application/json.
-app.use(
-  bodyParser.json({ limit: "50mb", extended: false, parameterLimit: 100000 })
-);
+
 
 // We must tell Express to use imported routes.
 app.use("/api/admins", Admins)
