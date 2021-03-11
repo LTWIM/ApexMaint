@@ -118,7 +118,6 @@ class Contact extends React.Component {
             <textarea type='text' className='contct-txtar' placeholder="Details..."
             required value={this.state.message} onChange={this.onMsgChange.bind(this)}></textarea>
           </div>
-          <div className={this.state.sent ?'msg msgAppear': 'msg'}> Message has been sent</div>
           <div className="contct-sbmit-btn-cnt">
             <button className='contct-sbmit-btn' type='submit'>Send</button>
           </div>

@@ -14,19 +14,11 @@ router.post("/send-mail", async(req, res) => {
   }
   let data = req.body
   console.log(data)
-  // let smtpTransport = nodemailer.createTransport({
-  //   service:'hotmail' ,
-  //   port:465,
-  //   auth:{
-  //     user:"apexmainttest1@hotmail.com",
-  //     pass:"59885988Aa"
-  //   }
-  // });
   const nodemailerMailgun = await nodemailer.createTransport(mg(auth));
 
 let mailOptions={
   from:"apexmainttest1@hotmail.com",
-  to:'manha1895@gmail.com',
+  to:'apexmaint1@gmail.com',
   subject:`${data.subject}`,
   html:`
   <h3>Informations</h3>
@@ -51,20 +43,6 @@ let mailOptions={
       res.status(200).send(info)
     }
   })
-
-
-// smtpTransport.sendMail(mailOptions, (err, response)=>{
-//   if(err){
-//     response.send(err)
-//   }
-//   else{
-//     // response.send('Success')
-//     emailStatu="Success"
-//   }
-// });
-
-// smtpTransport.close();
-// res.status(200).json({message:'fuck you shanw lee'})
 });
 
 
