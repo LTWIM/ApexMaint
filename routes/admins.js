@@ -11,6 +11,7 @@ const mg = require("nodemailer-mailgun-transport");
 const mailgun = require("mailgun-js")({apiKey: keys.mailGunAuthApiKey, domain:'alleve.ai'});
 const { februaryEmail } = require("../email_templates/index");
 const { miamiEmail} = require("../email_templates/miami_email");
+const { apexTemplate1 } = require("../email_templates/apexTemplate1");
 const keys_dev = require("../config/keys_dev");
 
 // const testEmailArray = [
@@ -46,9 +47,15 @@ const keys_dev = require("../config/keys_dev");
 const testEmailArray = [
   {
     "id": "5eecd28cc96d644045c75a2f",
-    "email": "kateri_dion@icloud.com",
+    "email": "paul146@ltwim.com",
     "firstName": "Kateri",
     "lastName": "Dion"
+},
+{
+  "id": "5eecd28cc96d644045c75a2f",
+  "email": "hotjoy94@ltwim.com",
+  "firstName": "Kateri",
+  "lastName": "Dion"
 },
 //   {
 //     "id": "604a49387eb8f863679537e7",
@@ -531,7 +538,7 @@ router.post("/send-mail", async(req, res) => {
   const auth = {
     auth:{
       api_key:keys_dev.mailGunAuthApiKey,
-      domain:'alleve.ai'
+      domain:'apexmaint.com'
     }
   }
 
@@ -543,13 +550,13 @@ router.post("/send-mail", async(req, res) => {
     let user = testEmailArray[i]
     console.log(user.email)
     nodemailerMailgun.sendMail({
-      from: 'info@alleve.ai',
+      from: 'apexmainttest1@hotmail.com',
       to:user.email,
       // to:'paulkwchoi92@gmail.com',
-      subject: 'Miami Trip March 26/27th Alleve!!',
-      'h:Reply-To': 'info@alleve.ai',
+      subject: 'Apex testing',
+      'h:Reply-To': 'info@apexmaint.com',
       // html: februaryEmail(),
-      html: miamiEmail(user.id),
+      html: apexTemplate1(),
   }, (err, info) => {
        if (err) {
          errorMessage.push(err)
