@@ -12,7 +12,7 @@ const mailgun = require("mailgun-js")({apiKey: keys.mailGunAuthApiKey, domain:'a
 const { februaryEmail } = require("../email_templates/index");
 const { miamiEmail} = require("../email_templates/miami_email");
 const { apexTemplate1 } = require("../email_templates/apexTemplate1");
-const keys_dev = require("../config/keys_dev");
+const keys_dev = require("../config/keys");
 
 // const testEmailArray = [
   //  "Bre@Alleve.ai",
