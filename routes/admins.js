@@ -12,6 +12,8 @@ const mailgun = require("mailgun-js")({apiKey: keys.mailGunAuthApiKey, domain:'a
 const { februaryEmail } = require("../email_templates/index");
 const { miamiEmail} = require("../email_templates/miami_email");
 const { apexTemplate1 } = require("../email_templates/apexTemplate1");
+const { apexTemplate2 } = require("../email_templates/apexTemplate2");
+
 const keys_dev = require("../config/keys");
 
 // const testEmailArray = [
@@ -550,13 +552,13 @@ router.post("/send-mail", async(req, res) => {
     let user = testEmailArray[i]
     console.log(user.email)
     nodemailerMailgun.sendMail({
-      from: 'apexmainttest1@hotmail.com',
+      from: 'info@apexmaint.com',
       to:user.email,
       // to:'paulkwchoi92@gmail.com',
-      subject: 'Apex testing',
-      'h:Reply-To': 'info@apexmaint.com',
+      subject: 'Apex testing6',
+      'h:Reply-To': 'apexmaint1@gmail.com',
       // html: februaryEmail(),
-      html: apexTemplate1(),
+      html: apexTemplate2(),
   }, (err, info) => {
        if (err) {
          errorMessage.push(err)
