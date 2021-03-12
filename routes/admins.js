@@ -47,15 +47,33 @@ const keys_dev = require("../config/keys");
 
 
 const testEmailArray = [
-  {
-    "id": "5eecd28cc96d644045c75a2f",
-    "email": "paul146@ltwim.com",
-    "firstName": "Kateri",
-    "lastName": "Dion"
-},
+//   {
+//     "id": "5eecd28cc96d644045c75a2f",
+//     "email": "paul146@ltwim.com",
+//     "firstName": "Kateri",
+//     "lastName": "Dion"
+// },
 {
   "id": "5eecd28cc96d644045c75a2f",
   "email": "hotjoy94@ltwim.com",
+  "firstName": "Kateri",
+  "lastName": "Dion"
+},
+{
+  "id": "5eecd28cc96d644045c75a2f",
+  "email": "paulskim68@yahoo.com",
+  "firstName": "Kateri",
+  "lastName": "Dion"
+},
+{
+  "id": "5eecd28cc96d644045c75a2f",
+  "email": "paulskim68@gmail.com",
+  "firstName": "Kateri",
+  "lastName": "Dion"
+},
+{
+  "id": "5eecd28cc96d644045c75a2f",
+  "email": "paulkim@apexmaint.com",
   "firstName": "Kateri",
   "lastName": "Dion"
 },
@@ -555,7 +573,7 @@ router.post("/send-mail", async(req, res) => {
       from: 'info@apexmaint.com',
       to:user.email,
       // to:'paulkwchoi92@gmail.com',
-      subject: 'Apex testing6',
+      subject: 'Apexmaint template 2',
       'h:Reply-To': 'apexmaint1@gmail.com',
       // html: februaryEmail(),
       html: apexTemplate2(),
