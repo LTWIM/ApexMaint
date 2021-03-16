@@ -22,14 +22,15 @@
 .category-cont {
   // border: 1px solid;
   width: 100%;
-  height: 54px;
+  // height: 54px;
   display: flex;
 
   .inner {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-top: 14px;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #004890;
     
   }
@@ -43,7 +44,7 @@
   font-style: normal;
   line-height: 1.6;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #fafafa;
 }
 .mobile-header-cont{
@@ -56,6 +57,12 @@
 @media screen and (max-width: 1080px){
   .subcategory{
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 800px){
+  .subcategory{
+    font-size: 12px;
+    width: 20%;
   }
 }
 

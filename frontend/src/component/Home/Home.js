@@ -5,20 +5,6 @@ import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 // import Video from "./Video/APEX.mp4";
 export class Home extends React.Component{
-  Triangle = () => {
-    return(
-      <div className='introduce-pic-logo'>
-        <div className='a'> <div className='red'>A</div>ffordable </div>
-        <div className='p'> <div className='blue'>P</div>rofessional </div>
-        <div className='e'> <div className='red'>E</div>xprienced </div>
-        <div className='redX'>X</div><div className='x'>cellently Referred </div>
-        <img className='triup' src={'/img/tri-up.png'}></img>
-        <img className='tridown' src={'/img/tri-down.png'}></img>
-        <img className='trileft' src={'/img/tri-up.png'}></img>
-        <img className='triright' src={'/img/tri-up.png'}></img>
-    </div>
-    )
-  }
 
   Ourservice = () =>{
     return(
@@ -236,27 +222,28 @@ export class Home extends React.Component{
           </div>
           <div className='video-cont'>
             <video width="360px" height="202px" controls src={"/Video/Fumigation.mp4"} autoPlay loop muted/>
-            
           </div>
         </div>
-        {/* 
-         */}
+        <div className='video-cont-mobile'>
+          <video width="100%" height="300px" controls src={"/Video/Fumigation.mp4"} autoPlay loop muted/>
+        </div>
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>
-            {this.Triangle()}
+            <img className='triangle-pic'src='/img/apexTriangle.png' width='100%'></img>
           </div>
           <div className='introduce-stringbox'>
             <div className='innerbox'>
-              <div className='introduce-string-title'>About APEX Business Maintenance, Inc</div>
+              <div className='introduce-string-title'>
+                About APEX Business Maintenance, Inc
+              </div>
               <div className='introduce-string-textbox1'>
                 APEX has been serving for over 30 years of experience and a staff committed to the best customer service. Our professional maintenance crews are licensed, insured, bonded and they have years of experience in the industry. We are not only dedicated to enhancing the visual appeal of your facility, but also providing a more sanitary environment  and healthier place of business. 
+              </div>
               <div className='introduce-string-textbox2'>
                 Simply think of APEX as your business partner who works late every night.
               </div>
-            </div>
-            <div className='section-cont' >
-
+              <div className='section-cont' >
               <div className='section-title' id='popupbtn1' >Communication</div>
               <div className='popup' id='popup1'>
                 Communication between you and your cleaning crew is very important for those special needs you may have. With APEX , you will be assigned an account executive who will inspect and see to your specialized needs on a regular schedule. In addition, a log sheet is maintained on each account where periodic phone calls or personal inspections are made by our representatives.

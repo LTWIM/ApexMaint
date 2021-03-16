@@ -81,7 +81,12 @@
 //     cursor: pointer;
 //   }
 // }
-
+.video-cont-mobile{
+  margin-top: 40px;
+  background-color: black;
+  display: none;
+  
+}
 .wall-paper-bottom-dash_v2{
   position: relative;
   margin-top: 40px;
@@ -98,8 +103,14 @@
     // border:1px solid white;
   }
   .video-cont{
-    margin:auto;
+    // margin:auto;
+    position:absolute;
+    top: 15px;
+    right: 15px;
   }
+  
+
+
   .wall-paper-bottom-title_v2{
     padding-left: 100px;
     padding-top: 100px;
@@ -212,120 +223,20 @@
   display: flex;
   flex-wrap: wrap;
 }
+.triangle-pic{
+  object-fit: contain;
+}
 .introduce-pic-cont {
+  object-fit: cover;
   // border: 1px solid;
+  transform: scale(1);
   margin: auto;
   display: flex;
+  margin-top: 60px;
   width: 435px;
   height: 435px;
-  align-self: center;
+  // align-self: center;
   justify-content: center;
-}
-.introduce-pic-logo {
-  height: 100%;
-  width: 435px;
-  // border: 1px solid;
-  text-align: center;
-  position: relative;
-  margin: auto;
-
-  .triup {
-    right: 120px;
-    position: absolute;
-    width: 200px;
-    height: 166px;
-    z-index: 2;
-  }
-  .tridown {
-    right: 120px;
-    top: 195px;
-    position: absolute;
-    width: 200px;
-    height: 166px;
-    z-index: 2;
-  }
-  .trileft {
-    right: 260px;
-    top: 235px;
-    position: absolute;
-    width: 200px;
-    height: 166px;
-    z-index: 2;
-  }
-  .triright {
-    right: -20px;
-    top: 235px;
-    position: absolute;
-    width: 200px;
-    height: 166px;
-    z-index: 2;
-  }
-  .a {
-    position: absolute;
-    color: white;
-    top: 90px;
-    left: 170px;
-    z-index: 4;
-    // font-family: OpenSans;
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    .red {
-      color: #be271b;
-    }
-  }
-  .p {
-    position: absolute;
-    color: white;
-    top: 244px;
-    left: 165px;
-    z-index: 4;
-    // font-family: OpenSans;
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    .blue {
-      color: #004890;
-    }
-  }
-  .e {
-    position: absolute;
-    color: white;
-    top: 320px;
-    left: 30px;
-    z-index: 4;
-    // font-family: OpenSans;
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    .red {
-      color: #be271b;
-    }
-  }
-  .x {
-    position: absolute;
-    display: flex;
-    color: white;
-    top: 310px;
-    left: 293px;
-    z-index: 4;
-    font-size: 17px;
-    font-weight: 600;
-    height: 40px;
-    flex-wrap: wrap;
-    border: 1px solid rgba(255, 0, 0, .0);
-    max-width: 131px;
-  }
-  .redX {
-    top: 310px;
-    left: 316px;
-    font-size: 17px;
-    font-weight: 600;
-    height: 40px;
-    color: #be271b;
-    position: absolute;
-    z-index: 4;
-  }
 }
 
 .introduce-stringbox {
@@ -333,15 +244,17 @@
   margin-top: 10px;
   margin-bottom: 10px;
   // border: 1px solid ;
-  width: 630px;
-  height: 680px;
+  width: 100%;
+  max-width: 630px;
+  
+  // height: 800px;
   display: block;
 
   .innerbox {
     margin-right: 100px;
     display: block;
-    width: 598px;
-    height: 560px;
+    width: 98%;
+    // height: 560px;
     // border: 1px solid red;
   }
 }
@@ -349,34 +262,30 @@
   // border: 1px solid;
   width: 100%;
   height: 40px;
-
   font-size: 29px;
   font-weight: bold;
   text-align: left;
 }
 .introduce-string-textbox1 {
   margin-top: 20px;
-  float: right;
-  // border: 1px solid;
-
   width: 100%;
-  height: 110px;
   font-size: 16px;
 }
 .introduce-string-textbox2{
-  float: right;
+  // float: right;
   // border: 1px solid;
 
   width: 100%;
-  height: 110px;
+  // height: 110px;
   font-size: 16px;
+  margin-bottom: 30px;
 }
 .section-cont {
   display: flex;
   width: 100%;
   // border: solid 1px yellow;
   justify-content: space-between;
-  padding-top: 35px;
+  // margin-top: 35px;
 }
 .section-title {
   padding: 5px;
@@ -445,23 +354,16 @@
   // border: 1px solid ;
   margin-top: 15px;
   width: 100%;
-  height: 260px;
   justify-content: space-between;
   font-size: 16px;
 }
 .section-textbox {
-  // border: 1px solid;
   width: 172px;
-  height: 290px;
-  
 }
 .our-services-title {
-  // border: 1px solid;
-  margin-top: 120px;
+  margin-top: 80px;
   width: 100%;
-  height: 25px;
   text-align: center;
-
   font-size: 30px;
   font-weight: bold;
 }
@@ -522,9 +424,7 @@
   padding-top: 60px;
   margin: 20px auto 80px auto;
   width: 98%;
-  justify-content: center;
-  // height: 680px;
-  
+  justify-content: center;  
   .Areas-we-services-pic1 {
     border-radius: 50%;
     // border: 1px solid black;
@@ -548,7 +448,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      padding-top: 80px;
+      padding-top: 25%;
     }
   }
   .Areas-we-services-pic2 {
@@ -575,7 +475,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      padding-top: 80px;
+      padding-top: 25%;
     }
   }
   .Areas-we-services-pic3 {
@@ -600,7 +500,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      padding-top: 80px;
+      padding-top: 25%;
     }
   }
   .Areas-we-services-pic4 {
@@ -626,7 +526,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #ffffff;
-      padding-top: 80px;
+      padding-top: 25%;
     }
   }
 }
@@ -661,16 +561,18 @@
     }
     .Areas-we-services-pic2{
       width: 220px; height: 220px;
+      margin-top: 150px;
     }
     .Areas-we-services-pic3{
       width: 220px; height: 220px; 
     }
     .Areas-we-services-pic4{
-      width: 220px; height: 220px; 
+      width: 220px; height: 220px;
+      margin-top: 150px;
     }
   }
 }
-@media screen and (max-width: 812px){
+@media screen and (max-width: 912px){
 
   .introduce-stringbox{
     flex-direction: column;
@@ -681,48 +583,22 @@
     }
     .Areas-we-services-pic2{
       width: 185px; height: 185px;
+      margin-top: 120px;
     }
     .Areas-we-services-pic3{
       width: 185px; height: 185px;
     }
     .Areas-we-services-pic4{
       width: 185px; height: 185px;
+      margin-top: 120px;
     }
   }
+  .video-cont{display: none;}
+  .wall-paper-bottom-dash_v2{display: none;}
+  .video-cont-mobile{display: block;}
 }
-@media screen and (max-width: 736px){
 
-  .introduce-stringbox{
-    flex-direction: column;
-  }
-  .Areas-we-services-pic-cont{
-    .Areas-we-services-pic1{
-      width: 170px; height: 170px;
-      .logo-title{
-        font-size: 16px;
-      } 
-    }
-    .Areas-we-services-pic2{
-      width: 170px; height: 170px;
-      .logo-title{
-        font-size: 16px;
-      } 
-    }
-    .Areas-we-services-pic3{
-      width: 170px; height: 170px;
-      .logo-title{
-        font-size: 16px;
-      } 
-    }
-    .Areas-we-services-pic4{
-      width: 170px; height: 170px;
-      .logo-title{
-        font-size: 16px;
-      } 
-    }
-  }
-}
-@media screen and (max-width: 667px){
+@media screen and (max-width: 770px){
 
   .introduce-stringbox{
     flex-direction: column;
@@ -730,17 +606,108 @@
   .Areas-we-services-pic-cont{
     .Areas-we-services-pic1{
       width: 150px; height: 150px;
+      .logo-title{
+        font-size: 16px;
+      } 
     }
     .Areas-we-services-pic2{
       width: 150px; height: 150px;
-      margin-top:120px;
+      margin-top: 100px;
+      .logo-title{
+        font-size: 16px;
+      } 
     }
     .Areas-we-services-pic3{
       width: 150px; height: 150px;
+      .logo-title{
+        font-size: 16px;
+      } 
     }
     .Areas-we-services-pic4{
       width: 150px; height: 150px;
-      margin-top:120px;
+      margin-top: 100px;
+      .logo-title{
+        font-size: 16px;
+      } 
+    }
+  }
+}
+@media screen and (max-width: 627px){
+
+  .introduce-stringbox{
+    flex-direction: column;
+  }
+  .Areas-we-services-pic-cont{
+    .Areas-we-services-pic1{
+      width: 140px; height: 140px;
+      .logo-title{
+        font-size: 11px;
+      } 
+    }
+    .Areas-we-services-pic2{
+      width: 140px; height: 140px;
+      margin-top:70px;
+      .logo-title{
+        font-size: 11px;
+      } 
+    }
+    .Areas-we-services-pic3{
+      width: 140px; height: 140px;
+      .logo-title{
+        font-size: 11px;
+      } 
+    }
+    .Areas-we-services-pic4{
+      width: 140px; height: 140px;
+      margin-top:70px;
+      .logo-title{
+        font-size: 11px;
+      } 
+    }
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .introduce-string-title{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .Areas-we-services-pic-cont{
+    .Areas-we-services-pic1{
+      width: 120px; height: 120px;
+    }
+    .Areas-we-services-pic2{
+      width: 120px; height: 120px;
+      margin-top:60px;
+    }
+    .Areas-we-services-pic3{
+      width: 120px; height: 120px;
+    }
+    .Areas-we-services-pic4{
+      width: 120px; height: 120px;
+      margin-top:60px;
+    }
+  }
+}
+@media screen and (max-width: 505px) {
+  .introduce-string-title{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .Areas-we-services-pic-cont{
+    .Areas-we-services-pic1{
+      width: 110px; height: 110px;
+    }
+    .Areas-we-services-pic2{
+      width: 110px; height: 110px;
+      margin-top:60px;
+    }
+    .Areas-we-services-pic3{
+      width: 110px; height: 110px;
+    }
+    .Areas-we-services-pic4{
+      width: 110px; height: 110px;
+      margin-top:60px;
     }
   }
 }
@@ -759,11 +726,6 @@
     display: flex;
     flex-wrap: wrap;
     // border: 1px solid;
-    .a{left: 150px}
-    .p{left: 150px}
-    .e{left: 10px}
-    .x{left: 273px}
-    .redX{left: 293px}
   }
   .introduce-pic-logo{
     transform: scale(0.6);
@@ -813,22 +775,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 450px;
+    // height: 450px;
     .Areas-we-services-pic1{
-      width: 220px; height: 220px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 100px; height: 100px; 
+      }
     .Areas-we-services-pic2{
-      width: 220px; height: 220px;
-      margin-top:0px; margin-bottom: 0px;}
+      width: 100px; height: 100px;
+      margin-top:50px;}
     .Areas-we-services-pic3{
-      width: 220px; height: 220px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 100px; height: 100px;}
     .Areas-we-services-pic4{
-      width: 220px; height: 220px;
-      margin-top:0px; margin-bottom: 0px;}
+      width: 100px; height: 100px;
+      margin-top:50px;}
   }
   .wall-paper-bottom-dash_v2{
-    display: none;
+    // display: none;
   }
 }
 @media screen and (max-width: 415px){
@@ -841,61 +802,57 @@
     display: flex;
     flex-wrap: wrap;
     .Areas-we-services-pic1{
-      width: 187px; height: 187px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 90px; height: 90px;}
     .Areas-we-services-pic2{
-      width: 187px; height: 187px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 90px; height: 90px; 
+      margin-top:45px;}
     .Areas-we-services-pic3{
-      width: 187px; height: 187px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 90px; height: 90px;}
     .Areas-we-services-pic4{
-      width: 187px; height: 187px; 
-      margin-top:0px; margin-bottom: 0px;}
+      width: 90px; height: 90px; 
+      margin-top:45px;}
   }
 }
 @media screen and (max-width: 375px){
-  .introduce-pic-cont{
-    .a{left: 110px}
-    .p{left: 110px}
-    .e{left: -30px}
-    .x{left: 233px}
-    .redX{left: 256px}
+  .Areas-we-services-pic-cont{
+    .Areas-we-services-pic1{
+      width: 85px; height: 85px;}
+    .Areas-we-services-pic2{
+      width: 85px; height: 85px; 
+      margin-top:40px;}
+    .Areas-we-services-pic3{
+      width: 85px; height: 85px;}
+    .Areas-we-services-pic4{
+      width: 85px; height: 85px; 
+      margin-top:40px;}
   }
 }
 @media screen and (max-width: 320px){
-  .introduce-pic-logo{
-    // border: 1px solid;
-    .a{left: 60px}
-    .p{left: 60px}
-    .e{left: -80px}
-    .x{left: 183px}
-    .redX{left: 203px}
-  }
+
   .Areas-we-services-pic-cont{
     height: 360px;
     .Areas-we-services-pic1{
       width: 130px; height: 130px;
       .logo-title{
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     .Areas-we-services-pic2{
       width: 130px; height: 130px;
       .logo-title{
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     .Areas-we-services-pic3{
       width: 130px; height: 130px;
       .logo-title{
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     .Areas-we-services-pic4{
       width: 130px; height: 130px;
       .logo-title{
-        font-size: 12px;
+        font-size: 10px;
       } 
     }
   }
@@ -904,3 +861,9 @@
 video::-webkit-media-controls {
   display: none;
 }
+
+// @media screen and (max-width:1076px){
+//   .introduce-cont{
+//     flex-direction: column;
+//   }
+// }
