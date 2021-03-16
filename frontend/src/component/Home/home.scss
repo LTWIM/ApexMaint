@@ -81,7 +81,12 @@
 //     cursor: pointer;
 //   }
 // }
-
+.video-cont-mobile{
+  margin-top: 40px;
+  background-color: black;
+  display: none;
+  
+}
 .wall-paper-bottom-dash_v2{
   position: relative;
   margin-top: 40px;
@@ -98,8 +103,14 @@
     // border:1px solid white;
   }
   .video-cont{
-    margin:auto;
+    // margin:auto;
+    position:absolute;
+    top: 15px;
+    right: 15px;
   }
+  
+
+
   .wall-paper-bottom-title_v2{
     padding-left: 100px;
     padding-top: 100px;
@@ -582,7 +593,10 @@
       margin-top: 120px;
     }
   }
+  .video-cont{display: none;}
+  .video-cont-mobile{display: block;}
 }
+
 @media screen and (max-width: 770px){
 
   .introduce-stringbox{
@@ -774,7 +788,7 @@
       margin-top:50px;}
   }
   .wall-paper-bottom-dash_v2{
-    display: none;
+    // display: none;
   }
 }
 @media screen and (max-width: 415px){

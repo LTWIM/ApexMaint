@@ -5,20 +5,6 @@ import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 // import Video from "./Video/APEX.mp4";
 export class Home extends React.Component{
-  Triangle = () => {
-    return(
-      <div className='introduce-pic-logo'>
-        <div className='a'> <div className='red'>A</div>ffordable </div>
-        <div className='p'> <div className='blue'>P</div>rofessional </div>
-        <div className='e'> <div className='red'>E</div>xprienced </div>
-        <div className='redX'>X</div><div className='x'>cellently Referred </div>
-        <img className='triup' src={'/img/tri-up.png'}></img>
-        <img className='tridown' src={'/img/tri-down.png'}></img>
-        <img className='trileft' src={'/img/tri-up.png'}></img>
-        <img className='triright' src={'/img/tri-up.png'}></img>
-    </div>
-    )
-  }
 
   Ourservice = () =>{
     return(
@@ -236,11 +222,11 @@ export class Home extends React.Component{
           </div>
           <div className='video-cont'>
             <video width="360px" height="202px" controls src={"/Video/Fumigation.mp4"} autoPlay loop muted/>
-            
           </div>
         </div>
-        {/* 
-         */}
+        <div className='video-cont-mobile'>
+          <video width="100%" height="300px" controls src={"/Video/Fumigation.mp4"} autoPlay loop muted/>
+        </div>
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>
