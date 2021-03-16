@@ -248,15 +248,16 @@ export class Home extends React.Component{
           </div>
           <div className='introduce-stringbox'>
             <div className='innerbox'>
-              <div className='introduce-string-title'>About APEX Business Maintenance, Inc</div>
+              <div className='introduce-string-title'>
+                About APEX Business Maintenance, Inc
+              </div>
               <div className='introduce-string-textbox1'>
                 APEX has been serving for over 30 years of experience and a staff committed to the best customer service. Our professional maintenance crews are licensed, insured, bonded and they have years of experience in the industry. We are not only dedicated to enhancing the visual appeal of your facility, but also providing a more sanitary environment  and healthier place of business. 
+              </div>
               <div className='introduce-string-textbox2'>
                 Simply think of APEX as your business partner who works late every night.
               </div>
-            </div>
-            <div className='section-cont' >
-
+              <div className='section-cont' >
               <div className='section-title' id='popupbtn1' >Communication</div>
               <div className='popup' id='popup1'>
                 Communication between you and your cleaning crew is very important for those special needs you may have. With APEX , you will be assigned an account executive who will inspect and see to your specialized needs on a regular schedule. In addition, a log sheet is maintained on each account where periodic phone calls or personal inspections are made by our representatives.
