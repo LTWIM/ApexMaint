@@ -244,7 +244,7 @@ export class Home extends React.Component{
 
         <div className='introduce-cont'>
           <div className='introduce-pic-cont'>
-            {this.Triangle()}
+            <img className='triangle-pic'src='/img/apexTriangle.png' width='100%'></img>
           </div>
           <div className='introduce-stringbox'>
             <div className='innerbox'>

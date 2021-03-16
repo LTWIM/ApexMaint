@@ -212,13 +212,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+.triangle-pic{
+  object-fit: contain;
+}
 .introduce-pic-cont {
-  // border: 1px solid;
+  object-fit: cover;
+  border: 1px solid;
+  transform: scale(1);
   margin: auto;
   display: flex;
+  margin-top: 60px;
   width: 435px;
   height: 435px;
-  align-self: center;
+  // align-self: center;
   justify-content: center;
 }
 .introduce-pic-logo {
@@ -759,11 +765,6 @@
     display: flex;
     flex-wrap: wrap;
     // border: 1px solid;
-    .a{left: 150px}
-    .p{left: 150px}
-    .e{left: 10px}
-    .x{left: 273px}
-    .redX{left: 293px}
   }
   .introduce-pic-logo{
     transform: scale(0.6);
@@ -856,11 +857,7 @@
 }
 @media screen and (max-width: 375px){
   .introduce-pic-cont{
-    .a{left: 110px}
-    .p{left: 110px}
-    .e{left: -30px}
-    .x{left: 233px}
-    .redX{left: 256px}
+
   }
 }
 @media screen and (max-width: 320px){
@@ -904,3 +901,9 @@
 video::-webkit-media-controls {
   display: none;
 }
+
+// @media screen and (max-width:1076px){
+//   .introduce-cont{
+//     flex-direction: column;
+//   }
+// }
