@@ -17,9 +17,10 @@ router.post("/send-mail", async(req, res) => {
   const nodemailerMailgun = await nodemailer.createTransport(mg(auth));
 
 let mailOptions={
-  from:"apexmainttest1@hotmail.com",
-  to:'apexmaint1@gmail.com',
+  from:"info@apexmaint.com",
+  to:'paulskim68@gmail.com',
   subject:`${data.subject}`,
+  'h:Reply-To': `${data.email}`,
   html:`
   <h3>Informations</h3>
     <ul>
