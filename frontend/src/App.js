@@ -21,7 +21,7 @@ export class App extends React.Component{
                 <Route path="/supplies" component={Supplies} exact/>  
                 <Route path="/testing" component={Tester} /> 
                 <Route path="/contact" component={Contact} exact />
-                <Route path="/Unsubscribe" component={Unsubscribe} exact></Route>
+                <Route path="/Unsubscribe/:id" component={Unsubscribe}></Route>
                 <Route path="/Unsubscribed" component={Unsubscribed} exact></Route>
                 <Route path="/404" component={FourOfour} exact></Route>
               </Switch>  
