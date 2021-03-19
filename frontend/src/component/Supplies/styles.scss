@@ -1,11 +1,12 @@
 .supplies-banner-cont{
-  width: 1440px;
+  width: 100%;
+  background-size:cover;
   overflow: hidden;
 }
 
 .supplies-wrapper {
   min-height: calc(100vh - 117px - 192px);
-  width: 100%;
+  max-width: 1440px;
 
   .supplies-hdr-container {
     width: 100%;

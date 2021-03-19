@@ -1,7 +1,8 @@
+
 import './App.css';
 import React,{ Component} from 'react';
-import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact} from './component/index';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact, Unsubscribe, Unsubscribed, FourOfour} from './component/index';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Tester from "./component/testing/create_user_test"
 export class App extends React.Component{
   constructor(props){
@@ -10,7 +11,7 @@ export class App extends React.Component{
   render(){
     return(
       <div className = 'backgroundSheet'>
-        <BrowserRouter>
+        <HashRouter>
           <Header/>
             <div className='web-container'> 
               <Switch>    
@@ -20,10 +21,13 @@ export class App extends React.Component{
                 <Route path="/supplies" component={Supplies} exact/>  
                 <Route path="/testing" component={Tester} /> 
                 <Route path="/contact" component={Contact} exact />
+                <Route path="/Unsubscribe" component={Unsubscribe} exact></Route>
+                <Route path="/Unsubscribed" component={Unsubscribed} exact></Route>
+                <Route path="/404" component={FourOfour} exact></Route>
               </Switch>  
           </div>
           <Footer/>
-        </BrowserRouter>
+        </HashRouter>
         </div>
     )
   }
