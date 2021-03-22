@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../Unsubscribe/unsubscribe.scss';
 import {Link, Route} from 'react-router-dom';
+import './404.scss'
+
 
 export class fourOfour extends React.Component{
   render(){
@@ -19,6 +21,12 @@ export class fourOfour extends React.Component{
             <div className="unsubscribe-text">
               Sorry, the page you looking for were not found
             </div>
+            <Link to='/'>
+            <div className='home-button'>
+              Go back to main page
+            </div>
+            </Link>
+            
             <div className="space"></div>
           </div>
       </div>
