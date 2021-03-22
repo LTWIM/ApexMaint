@@ -7,7 +7,9 @@ export class unsubscribe extends React.Component{
       <div className='unsubscribe-page'>
           <div className="unsubscribe-innerbox">
             <div className="unsubscribe-imgbox">
-              <img src="/logo/apexOld.png" width='30%'></img>
+              <Link to='/'>
+                <img src="/logo/apexOld.png" width='30%'/>
+              </Link>
             </div>
             <div className="unsubscribe-innerbox-top-textbox">
               GETTING TOO MUCH EMAIL?
