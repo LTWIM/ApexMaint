@@ -74,6 +74,16 @@
   }
 }
 
+@media screen and (max-width:600px) {
+  .type-2-cont{
+    .typ2-cont-cont{
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 .type-3-cont {
   justify-content: center;
   
