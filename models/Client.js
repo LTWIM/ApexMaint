@@ -4,27 +4,35 @@ const Schema = mongoose.Schema;
 
 // Now, let's think ahead to the information we need to require from a user and setup our schema:
 const ClientSchema = new Schema({
+  name: {
+    type: String
+  },
   email: {
-    type: String,
-    required: true,
+      type: String
   },
-  password: {
-    type: String,
-    required: true,
+  business: {
+      type: String
   },
-  firstName: {
-    type: String,
-    required: false,
+  address: {
+      type: String
   },
-  lastName: {
-    type: String,
-    required: false,
+  city: {
+      type: String
   },
-
+  zip: {
+      type: String
+  },
+  type: {
+      type: String,
+  },
+  subscribe: {
+      type: Boolean,
+      default: false
+  },
   date: {
-    type: Date,
-    default: Date.now,
-  },
+      type: Date,
+      default: Date.now
+  }
 });
 
 // Let's not forget to export our model.

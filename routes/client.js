@@ -67,9 +67,17 @@ router.post("/reach_out_to_client", async (req, res) => {
     res.status(500).send(err)
   }
 })
-
-
-
+// this method is used for unscribe single client
+router.patch("/:id", async(req, res) => {
+  Client.findOneAndUpdate({_id: req.params.id}, {subscribe : false}, {new:true}, function(err, result) {
+      if(err) {
+          res.status(400).json(err)
+      } else {
+          res.json(result)
+      }
+  })
+   
+});
 
 
 module.exports = router;

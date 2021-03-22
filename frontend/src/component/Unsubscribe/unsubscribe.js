@@ -1,8 +1,38 @@
 import React, {Component} from 'react';
 import './unsubscribe.scss';
-import {Link, Route} from 'react-router-dom'
+
+import {Link, withRouter} from 'react-router-dom'
+import swal from "sweetalert"
+import {unsubscribeClient} from '../../util/api_utils/client_api_util'
+
 export class unsubscribe extends React.Component{
+  constructor(props){
+    super(props)
+  }
+  componentDidMount(){
+    console.log(this.props)
+  }
+  onUnsubscribe(e, match) {
+    e.preventDefault();
+    swal({
+      title: "Are you sure?",
+      text: "Once unsubscribed, you will not be able to receive any emails from us.",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+          // return window.location.href = "https://www.apexmaint.com/#/unsubscribed"
+         unsubscribeClient(match.params.id)
+         return  window.location.href = "https://www.apexmaint.com/#/unsubscribed"
+      } else {
+        swal("Thank You For Keep Subscribing Us!");
+      }
+    });
+  }
   render(){
+    const {match} = this.props
     return(
       <div className='unsubscribe-page'>
           <div className="unsubscribe-innerbox">
@@ -14,11 +44,9 @@ export class unsubscribe extends React.Component{
             <div className="unsubscribe-innerbox-top-textbox">
               GETTING TOO MUCH EMAIL?
             </div>
-            <Link to ="/unsubscribed">
-              <div className="unsubscribe-button">
-                UNSUBSCRIBE
+              <div className="unsubscribe-button" onClick={e => this.onUnsubscribe(e, match)}>
+                <Link to ="/unsubscribed">UNSUBSCRIBE</Link>
               </div>
-            </Link>
             <div className="unsubscribe-text">
               You will not receive any more emails from APEX Building Maintenance.
             </div>
@@ -30,4 +58,4 @@ export class unsubscribe extends React.Component{
 
 }
 
-export default unsubscribe;
+export default withRouter(unsubscribe);

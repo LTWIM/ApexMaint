@@ -7,6 +7,7 @@ const db = require("./config/keys").mongoURI;
 // Imports created routes.
 const Admins = require("./routes/admins")
 const Emailer = require("./routes/mailer/sendMail")
+const Clients = require("./routes/client")
 // Allows us to parse the json sent to the front end.
 const bodyParser = require("body-parser");
 // Verifies incoming request tokens to project routes.
@@ -47,7 +48,6 @@ mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB successfully"))
   .catch((err) => console.log(err));
-
 // Tells the server which potrt to run on.
 const port = process.env.PORT || 5000;
 
@@ -63,6 +63,7 @@ const port = process.env.PORT || 5000;
 // We must tell Express to use imported routes.
 app.use("/api/admins", Admins)
 app.use("/api/emailer", Emailer)
+app.use("/api/clients", Clients)
 // Tells Express to start a socket and listen for connections on the path.
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
