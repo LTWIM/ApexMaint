@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './unsubscribe.scss';
-import {Link} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
 export class unsubscribe extends React.Component{
   render(){
     return(
