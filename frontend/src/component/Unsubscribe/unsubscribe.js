@@ -51,6 +51,11 @@ export class unsubscribe extends React.Component{
               You will not receive any more emails from APEX Building Maintenance.
             </div>
             <div className="space"></div>
+              <Link to='/'>
+                <div className='home-button'>
+                  Go back to main page
+                </div>
+              </Link>
           </div>
       </div>
     )
