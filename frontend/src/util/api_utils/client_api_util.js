@@ -15,3 +15,7 @@ export const deleteClientData = (id) => {
 export const editClientData = (id, data) => {
     return axios.patch(`/api/clients/${id}`, data)
 }
+
+export const unsubscribeClient = (id) => {
+    return axios.patch(`/api/clients/${id}`)
+}
