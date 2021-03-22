@@ -19,6 +19,11 @@ export class unsubscribed extends React.Component{
               You've been successfully unsubscribed from out newsletters and your email has been removed from the list. We're really sorry to see you go.
             </div>
             <div className="space"></div>
+            <Link to='/'>
+            <div className='home-button'>
+              Go back to main page
+            </div>
+            </Link>
           </div>
       </div>
     )
