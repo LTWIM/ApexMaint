@@ -24,7 +24,7 @@ export class App extends React.Component{
                 <Route path="/Unsubscribe/:id" component={Unsubscribe} ></Route>
                 {/* <Route path='/Unsubscribe/:id' render={(props) => (<Unsubscribe props= {props} />)}/> */}
                 <Route path="/Unsubscribed" component={Unsubscribed} exact></Route>
-                <Route path="/404" component={FourOfour} exact></Route>
+                <Route path="/*" component={FourOfour} exact></Route>
               </Switch>  
           </div>
           <Footer/>

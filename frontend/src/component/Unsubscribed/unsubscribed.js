@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import '../Unsubscribe/unsubscribe'
+import React, {Component} from 'react';
+import '../Unsubscribe/unsubscribe';
+import {Route, Link} from 'react-router-dom';
 
 export class unsubscribed extends React.Component{
   render(){
@@ -7,7 +8,9 @@ export class unsubscribed extends React.Component{
       <div className='unsubscribe-page'>
           <div className="unsubscribe-innerbox">
             <div className="unsubscribe-imgbox">
-              <img src="/logo/apexOld.png" width='30%'></img>
+              <Link to='/'>
+                <img src="/logo/apexOld.png" width='30%'/>
+              </Link>
             </div>
             <div className="unsubscribe-innerbox-top-textbox">
               You are now successfully unsubscribed
@@ -16,6 +19,11 @@ export class unsubscribed extends React.Component{
               You've been successfully unsubscribed from out newsletters and your email has been removed from the list. We're really sorry to see you go.
             </div>
             <div className="space"></div>
+            <Link to='/'>
+            <div className='home-button'>
+              GO BACK TO HOME
+            </div>
+            </Link>
           </div>
       </div>
     )

@@ -58,6 +58,13 @@
     font-size: 24px;
     width: 80%;
 }
+
+@media screen and (max-width:600px){
+    .long-ban-t2-rightside{
+        font-size: 18px;
+    }
+}
+
 #longbanner:hover .long-ban-t2-rightside{
     background-color: rgba(0,0,0,0.8);
     transition: background-color 1s;
