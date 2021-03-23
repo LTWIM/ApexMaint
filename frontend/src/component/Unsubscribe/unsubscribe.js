@@ -3,9 +3,11 @@ import './unsubscribe.scss';
 import {Link, withRouter} from 'react-router-dom'
 import swal from "sweetalert"
 import {unsubscribeClient} from '../../util/api_utils/client_api_util'
+
 export class unsubscribe extends React.Component{
   constructor(props){
     super(props)
+    this.onUnsubscribe = this.onUnsubscribe.bind(this)
   }
   componentDidMount(){
     console.log(this.props)
