@@ -23,7 +23,7 @@ export class fourOfour extends React.Component{
             </div>
             <Link to='/'>
             <div className='home-button'>
-              Go back to main page
+              GO BACK TO HOME
             </div>
             </Link>
             

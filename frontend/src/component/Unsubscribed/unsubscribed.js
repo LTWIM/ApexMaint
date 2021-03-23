@@ -21,7 +21,7 @@ export class unsubscribed extends React.Component{
             <div className="space"></div>
             <Link to='/'>
             <div className='home-button'>
-              Go back to main page
+              GO BACK TO HOME
             </div>
             </Link>
           </div>

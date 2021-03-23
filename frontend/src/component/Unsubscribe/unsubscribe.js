@@ -44,18 +44,22 @@ export class unsubscribe extends React.Component{
             <div className="unsubscribe-innerbox-top-textbox">
               GETTING TOO MUCH EMAIL?
             </div>
+            <Link to ="/unsubscribed">
               <div className="unsubscribe-button" onClick={e => this.onUnsubscribe(e, match)}>
-                <Link to ="/unsubscribed">UNSUBSCRIBE</Link>
+                UNSUBSCRIBE
               </div>
+            </Link>
+
+              <Link to='/'>
+                <div className='home-button'>
+                  GO BACK TO HOME
+                </div>
+              </Link>
             <div className="unsubscribe-text">
               You will not receive any more emails from APEX Building Maintenance.
             </div>
             <div className="space"></div>
-              <Link to='/'>
-                <div className='home-button'>
-                  Go back to main page
-                </div>
-              </Link>
+
           </div>
       </div>
     )
