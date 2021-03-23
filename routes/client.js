@@ -67,15 +67,28 @@ router.post("/reach_out_to_client", async (req, res) => {
     res.status(500).send(err)
   }
 })
-// this method is used for unscribe single client
+// this method is used for unscribing single client
 router.patch("/:id", async(req, res) => {
-  Client.findOneAndUpdate({_id: req.params.id}, {subscribe : false}, {new:true}, function(err, result) {
-      if(err) {
-          res.status(400).json(err)
-      } else {
-          res.json(result)
-      }
-  })
+  try{ 
+ let user = await Client.findById(req.params.id)
+ user.subscribe = false
+ user.save();
+ res.json({user})
+} catch(err){
+  console.log(err)
+  res.status(500).send(err)
+}
+  
+  // Client.findOneAndUpdate
+  // ({_id: req.params.id}, 
+  //   {subscribe : false},
+  //    {new:true}, function(err, result) {
+  //     if(err) {
+  //         res.status(400).json(err)
+  //     } else {
+  //         res.json(result)
+  //     }
+  // })
    
 });
 
