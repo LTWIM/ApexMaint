@@ -18,7 +18,7 @@ router.post("/send-mail", async(req, res) => {
 
 let mailOptions={
   from:"info@apexmaint.com",
-  to:'paulskim68@gmail.com',
+  to:'paulskim68@yahoo.com',
   subject:`${data.subject}`,
   'h:Reply-To': `${data.email}`,
   html:`
