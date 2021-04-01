@@ -26,8 +26,7 @@ export class unsubscribe extends React.Component{
       if (willDelete) {
           // return window.location.href = "https://www.apexmaint.com/#/unsubscribed"
          unsubscribeClient(match.params.id)
-         debugger;
-         return  window.location.href = "https://www.apexmaint.com/#/unsubscribed"
+         return  window.location.href = "https://www.apexmaint.com/unsubscribed"
       } else {
         swal("Thank You For Keep Subscribing Us!");
       }
