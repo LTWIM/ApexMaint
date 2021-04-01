@@ -3,3 +3,5 @@ User-agent: *
 Disallow:/contact/
 Disallow:/testing/
 Disallow:/api/admins
+
+Sitemap: https://www.apexmaint.com/sitemap.xml
