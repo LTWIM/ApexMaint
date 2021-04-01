@@ -5,6 +5,8 @@ Disallow:/testing/
 Disallow:/api/admins
 
 User-agent: Googlebot
-Allow: /
+Disallow:/contact/
+Disallow:/testing/
+Disallow:/api/admins
 
 Sitemap: https://www.apexmaint.com/sitemap.xml
