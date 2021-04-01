@@ -4,4 +4,7 @@ Disallow:/contact/
 Disallow:/testing/
 Disallow:/api/admins
 
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://www.apexmaint.com/sitemap.xml
