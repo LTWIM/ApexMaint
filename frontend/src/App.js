@@ -2,7 +2,7 @@
 import './App.css';
 import React,{ Component} from 'react';
 import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact, Unsubscribe, Unsubscribed, FourOfour} from './component/index';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Tester from "./component/testing/create_user_test"
 export class App extends React.Component{
   constructor(props){
@@ -11,7 +11,7 @@ export class App extends React.Component{
   render(){
     return(
       <div className = 'backgroundSheet'>
-        <HashRouter>
+        <BrowserRouter>
           <Header/>
             <div className='web-container'> 
               <Switch>    
@@ -28,7 +28,7 @@ export class App extends React.Component{
               </Switch>  
           </div>
           <Footer/>
-        </HashRouter>
+        </BrowserRouter>
         </div>
     )
   }

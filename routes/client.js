@@ -71,7 +71,7 @@ router.post("/reach_out_to_client", async (req, res) => {
 router.patch("/:id", async(req, res) => {
   try{ 
  let user = await Client.findById(req.params.id)
- user.subscribe = false
+ user.subscribe = true
  user.save();
  res.json({user})
 } catch(err){
