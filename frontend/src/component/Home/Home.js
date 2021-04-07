@@ -103,7 +103,7 @@ export class Home extends React.Component{
     return(
       <div className='Home-cont'>
         <Helmet>
-          <title>Apex-Home</title>
+          <title>Apex Maintenance Inc. - #1 SoCal Maintenance Service providing needs for your business.</title>
           <meta name="description" content="Commercial Cleaning for Any Industry Whether your company makes its home in an office building, clinic or school, we deliver professional commercial cleaning services that help promote healthy work environments and keep your buildings sparkling."/>
           <meta name="keywords"  content="
           cleaning services commercial,

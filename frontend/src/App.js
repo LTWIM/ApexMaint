@@ -13,10 +13,6 @@ export class App extends React.Component{
   render(){
     return(
       <div className = 'backgroundSheet'>
-         <Helmet>
-        <title>APEX MAINTENANCE</title>
-        <meta name="description" content="Commercial Cleaning for Any Industry Whether your company makes its home in an office building, clinic or school, we deliver professional commercial cleaning services that help promote healthy work environments and keep your buildings sparkling." />
-      </Helmet>
         <BrowserRouter>
           <Header/>
             <div className='web-container'> 
@@ -25,7 +21,7 @@ export class App extends React.Component{
                 <Route path="/disinfecting" component={Disinfecting} exact/>
                 <Route path="/commercial" component={Commercial} exact/>
                 <Route path="/supplies" component={Supplies} exact/>  
-                <Route path="/testing" component={Tester} /> 
+                <Route path="/testing" component={Tester} /> apex
                 <Route path="/contact" component={Contact} exact />
                 <Route path="/Unsubscribe/:id" component={Unsubscribe} ></Route>
                 {/* <Route path='/Unsubscribe/:id' render={(props) => (<Unsubscribe props= {props} />)}/> */}
