@@ -3,7 +3,9 @@ import './App.css';
 import React,{ Component} from 'react';
 import {Header, Home, Footer, Disinfecting, Commercial, Supplies, Contact, Unsubscribe, Unsubscribed, FourOfour} from './component/index';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Tester from "./component/testing/create_user_test"
+import Tester from "./component/testing/create_user_test";
+import {Helmet} from 'react-helmet'
+
 export class App extends React.Component{
   constructor(props){
     super(props);
@@ -11,6 +13,10 @@ export class App extends React.Component{
   render(){
     return(
       <div className = 'backgroundSheet'>
+         <Helmet>
+        <title>APEX MAINTENANCE</title>
+        <meta name="description" content="Commercial Cleaning for Any Industry Whether your company makes its home in an office building, clinic or school, we deliver professional commercial cleaning services that help promote healthy work environments and keep your buildings sparkling." />
+      </Helmet>
         <BrowserRouter>
           <Header/>
             <div className='web-container'> 
