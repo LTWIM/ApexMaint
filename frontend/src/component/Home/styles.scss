@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     align-items: center;
     .trust__subHeader__cont {
       text-align: center;
@@ -72,18 +72,25 @@
     }
     .trust__text__cont {
       width: 80%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 16px;
+      max-width: 1000px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 1.3em;
+      letter-spacing: 0.03em;
+      font-weight: lighter;
+      color: rgba(0, 0, 0, 0.8);
     }
     .trust__svgBanner__cont {
       width: 80%;
+      max-width: 1000px;
+
       display: flex;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       border-radius: 12px;
       background-color: #fdfaf6;
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 35px;
+      padding-bottom: 35px;
       margin-bottom: 45px;
       justify-content: space-between;
       .svgBanner__contt__cont:first-child {
@@ -114,12 +121,14 @@
         .svgBanner__text__cont {
           text-align: center;
           width: 80%;
+          
           font-size: 14px;
         }
       }
     }
     .trust__diagram__cont {
       width: 80%;
+      max-width: 1000px;
       display: flex;
       .diagram__img__cont {
         width: 36%;
