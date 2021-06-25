@@ -157,12 +157,24 @@
     // background-image: url("/images/pic8.jpg");
     display: flex;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    height: fit-content;
+    position: relative;
+    .home__ourGreat__cont__background{
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+    }
     .ourGreat__contt__cont {
+      z-index: 2;
       display: flex;
       flex-direction: column;
       width: 80%;
+      padding-top: 40px;
+      padding-bottom: 40px;
       .ourGreat__subHeader__cont {
         font-weight: bold;
         margin-bottom: 4px;

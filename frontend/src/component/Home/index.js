@@ -87,6 +87,15 @@ export default class Home extends React.Component {
   renderOurGreatBanner() {
     return (
       <div className="home__ourGreat__cont">
+        <div className="home__ourGreat__cont__background"
+        style={{
+          backgroundImage:`url('https://pinergyimages.s3.us-west-1.amazonaws.com/broom_background.jpg')`,
+          backgroundPosition:'center',
+          backgroundSize:'cover',
+          backgroundRepeat:'no-repeat'
+        }}>
+        </div>
+
         <div className="ourGreat__contt__cont">
           <div className="ourGreat__subHeader__cont">
             <span>WHY CHOOSE US</span>
@@ -109,6 +118,7 @@ export default class Home extends React.Component {
             {this.mapOurGreatSvg("SUPLLIES DELIVERY")}
           </div>
         </div>
+
       </div>
     );
   }
