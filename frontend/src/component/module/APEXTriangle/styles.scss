@@ -1,0 +1,13 @@
+.APEXTriangle-cont{
+  border: 1px solid black;
+  position: relative;
+  .APEXTriangle-cont__outter-triangle{
+    position: absolute;
+  }
+  .APEXTriangle-cont__white-line{
+    position: absolute;
+  }
+  .APEXTriangle-cont__inner-triangle{
+    position: absolute;
+  }
+}

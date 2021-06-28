@@ -5,7 +5,8 @@
   .home__topBanner__cont {
     background-image: url("/images/pic16.jpg");
     background-size: cover;
-    background-position-y: -290px;
+    background-position-y: center;
+    background-repeat: no-repeat;
     width: 100%;
     .topBanner__contt__cont {
       width: 50%;
@@ -131,8 +132,10 @@
       max-width: 1000px;
       display: flex;
       .diagram__img__cont {
-        width: 36%;
-        background-color: #ffdde6;
+        width: fit-content;
+        height: fit-content;
+        // background-color: #ffdde6;
+        background-image: linear-gradient(to bottom, #ffa0ba, #81beff);
       }
       .diagram__contt__cont {
         display: flex;
@@ -182,6 +185,7 @@
       display: flex;
       flex-direction: column;
       width: 80%;
+      max-width: 1000px;
       padding-top: 40px;
       padding-bottom: 40px;
       .ourGreat__subHeader__cont {

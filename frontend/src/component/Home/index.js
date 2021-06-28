@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import { building, cleaning, broom, pin } from "../module/svg/index";
+import APEXTriangle from '../module/APEXTriangle/APEXTriangle'
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -65,7 +66,9 @@ export default class Home extends React.Component {
           )}
         </div>
         <div className="trust__diagram__cont">
-          <div className="diagram__img__cont"></div>
+          <div className="diagram__img__cont">
+            <APEXTriangle size="360px"/>
+          </div>
           <div className="diagram__contt__cont">
             {this.mapTrustTextbox(
               "Communication - ",
