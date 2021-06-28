@@ -8,14 +8,15 @@
   }
 }
 
-.backgroundSheet{
+.backgroundSheet {
   background-color: #fffcf6;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.web-container{
+.web-container {
   width: 100%;
   max-width: 1440px;
   display: flex;
@@ -24,8 +25,8 @@
   background-color: white;
   margin: auto;
 }
-@media screen and (max-width: 1080px){
-  .web-container{
+@media screen and (max-width: 1080px) {
+  .web-container {
     width: 100%;
   }
 }
