@@ -464,6 +464,19 @@
     }
   }
 }
+
+@media screen and (max-width:690px) {
+  .home__wrapper{
+    .home__contact__cont{
+      .contact__contt__cont{
+        margin: auto;
+        left:0;
+        right:0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width:500px) {
   .home__wrapper{
     .home__topBanner__cont{
@@ -472,6 +485,13 @@
           margin: auto;
         }
       }
+    }
+    .home__contact__cont{
+      .home__contact__cont__background{
+        min-width: 190px;
+        width: 90%;
+      }
+
     }
   }
 }
