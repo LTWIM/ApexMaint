@@ -93,18 +93,19 @@
       padding-top: 35px;
       padding-bottom: 35px;
       margin-bottom: 45px;
-      justify-content: space-between;
+      justify-content: space-around;
       .svgBanner__contt__cont:first-child {
-        padding-left: 50px;
+        // padding-left: 50px;
       }
       .svgBanner__contt__cont:last-child {
-        padding-right: 50px;
+        // padding-right: 50px;
       }
       .svgBanner__contt__cont {
-        width: 23%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        // border: 1px solid;
         .svgBanner__svg__cont {
           height: 60px;
           .svgBanner__svg__outerLayer {
@@ -118,6 +119,7 @@
           font-size: 21px;
           margin-bottom: 10px;
           margin-top: 10px;
+          text-align: center;
         }
         .svgBanner__text__cont {
           text-align: center;
@@ -355,6 +357,12 @@
 @media screen and (max-width:1080px) {
   .home__wrapper{
     .home__trust__cont{
+      .trust__svgBanner__cont{
+        width: 90%;
+      }
+      .trust__text__cont{
+        width: 90%;
+      }
       .trust__diagram__cont{
         width: 90%;
         .diagram__contt__cont{
@@ -376,8 +384,36 @@
 @media screen and (max-width:860px) {
   .home__wrapper{
     .home__trust__cont{
+      .trust__subHeader__cont{
+        font-size: 14px;
+      }
+      .trust__title__cont{
+        font-size: 26px;
+      }
+      .trust__text__cont{
+        font-size: 15px;
+      }
+      .trust__svgBanner__cont{
+        
+        .svgBanner__contt__cont{
+          .svgBanner__svg__cont{
+            height: 50px;
+          }
+          .svgBanner__title__cont{
+            font-size: 16px;
+          }
+          .svgBanner__text__cont{
+            font-size: 12px;
+          }
+        }
+      }
+
       .trust__diagram__cont{
         flex-wrap: wrap;
+        .diagram__img__cont{
+          width: 250px;
+          height: 250px;
+        }
         .diagram__contt__cont{
           // display: block;
           .diagram__text__cont{
