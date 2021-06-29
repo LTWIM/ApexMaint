@@ -68,7 +68,7 @@ export default class Home extends React.Component {
         <div className="trust__diagram__cont">
           <div className="diagram__img__cont" style={{
             backgroundImage:`url('https://pinergyimages.s3.us-west-1.amazonaws.com/apexTriangle.png')`,
-            backgroundSize:'contain',
+            backgroundSize:'cover',
             backgroundPosition:'center',
             backgroundRepeat:'no-repeat'
           }}>

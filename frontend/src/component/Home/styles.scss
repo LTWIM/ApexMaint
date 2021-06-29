@@ -356,6 +356,27 @@
 
 @media screen and (max-width:1080px) {
   .home__wrapper{
+    .home__topBanner__cont{
+      .topBanner__contt__cont{
+        margin: auto;
+        width: 80%;
+        padding: 0;
+        padding-top: 190px;
+        padding-bottom: 50px;
+        .topBanner__title__cont{
+          font-size: 45px;
+          width: 350px;
+          
+        }
+        .topBanner__text__cont{
+          padding: 15px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.4);
+          width: 320px;
+
+        }
+      }
+    }
     .home__trust__cont{
       .trust__svgBanner__cont{
         width: 90%;
@@ -432,6 +453,17 @@
         .diagram__img__cont{
           position:initial
 
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .home__wrapper{
+    .home__topBanner__cont{
+      .topBanner__contt__cont{
+        .topBanner__btn__cont{
+          margin: auto;
         }
       }
     }
