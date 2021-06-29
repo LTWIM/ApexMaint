@@ -98,7 +98,7 @@ export default class Home extends React.Component {
         <div className="home__ourGreat__cont__background"
         style={{
           backgroundImage:`url('https://pinergyimages.s3.us-west-1.amazonaws.com/broom_background.jpg')`,
-          backgroundPosition:'center',
+          backgroundPosition:'left',
           backgroundSize:'cover',
           backgroundRepeat:'no-repeat'
         }}>

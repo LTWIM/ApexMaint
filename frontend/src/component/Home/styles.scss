@@ -456,6 +456,12 @@
         }
       }
     }
+    .home__ourGreat__cont{
+      .home__ourGreat__cont__background{
+        width: 100%;
+        background-position: left;
+      }
+    }
   }
 }
 @media screen and (max-width:500px) {
