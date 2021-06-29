@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import { building, cleaning, broom, pin } from "../module/svg/index";
-import APEXTriangle from '../module/APEXTriangle/APEXTriangle'
+// import APEXTriangle from '../module/APEXTriangle/APEXTriangle'
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -66,8 +66,13 @@ export default class Home extends React.Component {
           )}
         </div>
         <div className="trust__diagram__cont">
-          <div className="diagram__img__cont">
-            <APEXTriangle size="360px"/>
+          <div className="diagram__img__cont" style={{
+            backgroundImage:`url('https://pinergyimages.s3.us-west-1.amazonaws.com/apexTriangle.png')`,
+            backgroundSize:'contain',
+            backgroundPosition:'center',
+            backgroundRepeat:'no-repeat'
+          }}>
+            
           </div>
           <div className="diagram__contt__cont">
             {this.mapTrustTextbox(
@@ -146,6 +151,15 @@ export default class Home extends React.Component {
   renderContactBanner() {
     return (
       <div className="home__contact__cont">
+        <div className="home__contact__cont__background"
+        style={{
+          backgroundImage:`URL("https://pinergyimages.s3.us-west-1.amazonaws.com/WaveBackground.png")`,
+          backgroundSize:'cover',
+          backgroundPosition:'right',
+          backgroundRepeat:'no-repeat'
+        }}>
+
+        </div>
         <div className="contact__contt__cont">
           <div className="contact__subHeader__cont">
             <span>GET IN</span>
